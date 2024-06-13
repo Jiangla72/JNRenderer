@@ -34,7 +34,7 @@ project "renderer"
 
 		defines 
 		{ 
-
+			"_JN_ENGINE",
 		}
 	
 	links
@@ -45,7 +45,7 @@ project "renderer"
 	
 	postbuildcommands
 	{
-		("{COPY} %{cfg.buildtarget.relpath}  %{wks.location}/"..outputdir .."/bin/" ..  "/Editor ")
+		("{COPY} %{cfg.buildtarget.relpath}  %{wks.location}/OUTPUT"..outputdir .."/bin" ..  "/editor ")
 	}
 
 	filter "configurations:Debug"

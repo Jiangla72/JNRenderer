@@ -16,7 +16,7 @@ project "editor"
 	}
 	includedirs
     {
-       
+       "../renderer/",
     }
 
 	filter "system:windows"
