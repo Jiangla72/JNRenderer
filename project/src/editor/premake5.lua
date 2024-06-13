@@ -3,8 +3,8 @@ project "editor"
 	architecture "x64"
 	kind "ConsoleApp"
 	staticruntime "off"
-	targetdir ("%{wks.location}/OUTPUT"..outputdir .. "/bin" .. "/%{prj.name}")
-	objdir ("%{wks.location}/OUTPUT"..outputdir.."/bin-int" .."/%{prj.name}")
+	targetdir ("%{wks.location}/OUTPUT/"..outputdir .. "/bin" .. "/%{prj.name}")
+	objdir ("%{wks.location}/OUTPUT/"..outputdir.."/bin-int" .."/%{prj.name}")
 	
 	files
 	{

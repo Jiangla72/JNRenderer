@@ -3,8 +3,8 @@ project "renderer"
 	architecture "x64"
 	kind "SharedLib"
 	staticruntime "off"
-	targetdir ("%{wks.location}/OUTPUT"..outputdir .. "/bin" .. "/%{prj.name}")
-	objdir ("%{wks.location}/OUTPUT"..outputdir.."/bin-int" .."/%{prj.name}")
+	targetdir ("%{wks.location}/OUTPUT/"..outputdir .. "/bin" .. "/%{prj.name}")
+	objdir ("%{wks.location}/OUTPUT/"..outputdir.."/bin-int" .."/%{prj.name}")
 	
 	files
 	{
@@ -45,7 +45,7 @@ project "renderer"
 	
 	postbuildcommands
 	{
-		("{COPY} %{cfg.buildtarget.relpath}  %{wks.location}/OUTPUT"..outputdir .."/bin" ..  "/editor ")
+		("{COPY} %{cfg.buildtarget.relpath}  %{wks.location}/OUTPUT/"..outputdir .."/bin" ..  "/editor ")
 	}
 
 	filter "configurations:Debug"
