@@ -2,8 +2,8 @@
 
 int main()
 {
-	Engine renderer;
-	renderer.start();
+	Engine* renderer=Engine::getEngine();
+	renderer->start();
 
 	return 1;
 }

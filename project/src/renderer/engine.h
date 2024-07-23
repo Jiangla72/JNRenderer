@@ -4,9 +4,13 @@
 class Window;
 class JNAPI Engine
 {
-public:
+private:
 	Engine();
 	~Engine();
+
+public:
+	static Engine* engine;
+	static Engine* getEngine();
 	void start(); 
 	void render();
 private:

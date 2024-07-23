@@ -2,6 +2,58 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include<iostream>
+
+void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+
+	if (action != GLFW_PRESS)
+		return;
+	switch (key)
+	{
+	case GLFW_KEY_ESCAPE:
+		glfwSetWindowShouldClose(window, GL_TRUE);
+		break;
+	default:
+		break;
+	}
+}
+void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
+{
+
+	if (action == GLFW_PRESS) switch (button)
+	{
+	case GLFW_MOUSE_BUTTON_LEFT:
+		std::cout<<"Mosue left button clicked!"<<std::endl;
+		break;
+	case GLFW_MOUSE_BUTTON_MIDDLE:
+		std::cout << "Mosue middle button clicked!" << std::endl;
+		break;
+	case GLFW_MOUSE_BUTTON_RIGHT:
+		std::cout << "Mosue right button clicked!" << std::endl;
+		break;
+	default:
+		break;
+
+	}
+	return;
+
+}
+void cursor_position_callback(GLFWwindow* window, double x, double y)
+{
+
+	return;
+
+}
+void scroll_callback(GLFWwindow* window, double x, double y)
+{
+
+	return;
+}
+
+void framebuffer_size_callback(GLFWwindow* window, int w, int h)
+{
+
+}
 Window::Window()
 {
 }
@@ -24,16 +76,23 @@ void Window::init()
 		glfwTerminate();
 		return;
 	}
+	glfwMakeContextCurrent(m_pWindow);
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
 	{
 		std::cout << " Error : failed load gl func ptrs!" << std::endl;
 		return;
 	}
-	glfwMakeContextCurrent(m_pWindow);
+	glfwSwapInterval(1);
+	glfwSetKeyCallback(m_pWindow, key_callback);
+	glfwSetFramebufferSizeCallback(m_pWindow, framebuffer_size_callback);
+	glfwSetMouseButtonCallback(m_pWindow, mouse_button_callback);
+	glfwSetCursorPosCallback(m_pWindow, cursor_position_callback);
+	glfwSetScrollCallback(m_pWindow, scroll_callback);
 }
 
 void Window::update()
 {
+
 	_ProcessInput(m_pWindow);
 	glfwSwapBuffers(m_pWindow);
 	glfwPollEvents();
