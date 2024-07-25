@@ -30,9 +30,9 @@ void Engine::start()
 
 	Model bunny("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\bunny\\bunny.obj");
 
-	SoftRenderer* renderer =new SoftRenderer();
-	renderer->init(640,640);
-	Scene* scene=new Scene();
+	renderer = std::make_shared<SoftRenderer>();
+	scene = std::make_shared <Scene>();
+	renderer->init(scene, 640, 640);
 	scene->init();
 	scene->Add(&bunny);
 
@@ -40,14 +40,12 @@ void Engine::start()
 	{
 		
 		render();
-		renderer->render(scene);
+		renderer->render();
 		renderer->present();
 		window->update();
 	}
 	window->release();
 
-	delete renderer;
-	delete scene;
 }
 
 

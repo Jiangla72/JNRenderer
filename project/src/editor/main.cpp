@@ -2,8 +2,7 @@
 
 int main()
 {
-	Engine* renderer=Engine::getEngine();
-	renderer->start();
+	Engine::getEngine()->start();
 
 	return 1;
 }

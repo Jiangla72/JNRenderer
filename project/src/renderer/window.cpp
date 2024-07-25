@@ -2,10 +2,10 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include<iostream>
-
+#include"engine.h"
+#include"Scene.h"
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-
 	if (action != GLFW_PRESS)
 		return;
 	switch (key)
@@ -42,7 +42,6 @@ void cursor_position_callback(GLFWwindow* window, double x, double y)
 {
 
 	return;
-
 }
 void scroll_callback(GLFWwindow* window, double x, double y)
 {

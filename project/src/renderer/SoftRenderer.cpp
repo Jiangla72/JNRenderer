@@ -13,10 +13,12 @@ SoftRenderer::SoftRenderer()
 
 SoftRenderer::~SoftRenderer()
 {
+   
 }
 
-void SoftRenderer::init(int width, int height)
+void SoftRenderer::init(std::shared_ptr<Scene> scene,int width, int height)
 {
+    m_pScene = scene;
     m_nWidth = width;
     m_nHeight = height;
     depth_buf.resize(width * height);
@@ -135,10 +137,10 @@ void SoftRenderer::init(int width, int height)
 
 }
 
-void SoftRenderer::render(Scene* scene)
+void SoftRenderer::render()
 {
     clear();
-    draw(scene);
+    draw();
 }
 
 void SoftRenderer::present()
@@ -170,15 +172,15 @@ void SoftRenderer::clear()
     std::fill(frame_buf, frame_buf+ m_nWidth * m_nHeight * 3 , 0);
 }
 
-void SoftRenderer::draw(Scene* scene)
+void SoftRenderer::draw()
 {
     float f1 = (50 - 0.1) / 2.0;
     float f2 = (50 + 0.1) / 2.0;
-    Camera* l_Camera = scene->getCamera();
+    Camera* l_Camera = m_pScene->getCamera();
     glm::mat4x4 matView = l_Camera->getCameraData().matView;
     glm::mat4x4 matModel(1.0f);
     glm::mat4x4 mvp = glm::mat4x4(1)*l_Camera->getCameraData().matViewProject;
-    for (const auto& model : scene->getModels())
+    for (const auto& model : m_pScene->getModels())
     {
         auto& meshes = model->m_vecMesh;
         for (const auto& m : meshes)
@@ -223,8 +225,8 @@ void SoftRenderer::draw(Scene* scene)
                 //Viewport transformation
                 for (auto& vert : v)
                 {
-                    vert.x = 0.5 * scene->width * (vert.x + 1.0);
-                    vert.y = 0.5 * scene->height * (vert.y + 1.0);
+                    vert.x = 0.5 * m_pScene->width * (vert.x + 1.0);
+                    vert.y = 0.5 * m_pScene->height * (vert.y + 1.0);
                     vert.z = vert.z * f1 + f2;
                 }
 

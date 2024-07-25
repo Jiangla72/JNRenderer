@@ -2,6 +2,8 @@
 #include "core.h"
 #include <memory>
 class Window;
+class SoftRenderer;
+class Scene;
 class JNAPI Engine
 {
 private:
@@ -15,4 +17,6 @@ public:
 	void render();
 private:
 	std::unique_ptr<Window> window;
+	std::shared_ptr<SoftRenderer> renderer = nullptr;
+	std::shared_ptr<Scene> scene = nullptr;
 };
