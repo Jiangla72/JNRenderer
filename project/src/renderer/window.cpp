@@ -2,12 +2,18 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include<iostream>
-#include"engine.h"
-#include"Scene.h"
+#include"Input.h"
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-	if (action != GLFW_PRESS)
-		return;
+	if (action == GLFW_PRESS)
+	{
+		Input::setPressedKey(key);
+	}
+	else if (action == GLFW_RELEASE)
+	{
+		Input::setReleasedKey(key);
+	}
+
 	switch (key)
 	{
 	case GLFW_KEY_ESCAPE:
@@ -19,6 +25,15 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 }
 void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 {
+
+	if (action == GLFW_PRESS)
+	{
+		Input::setMouseClicked(button);
+	}
+	if (action == GLFW_RELEASE)
+	{
+		Input::setMouseReleased(button);
+	}
 
 	if (action == GLFW_PRESS) switch (button)
 	{
@@ -36,22 +51,21 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 
 	}
 	return;
-
 }
 void cursor_position_callback(GLFWwindow* window, double x, double y)
 {
-
+	Input::setMouseMove(x, y);
 	return;
 }
 void scroll_callback(GLFWwindow* window, double x, double y)
 {
-
+	Input::setMouseScroll(x, y);
 	return;
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int w, int h)
 {
-
+	glViewport(0, 0, w, h);
 }
 Window::Window()
 {
