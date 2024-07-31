@@ -2,7 +2,6 @@
 #include <GLFW/glfw3.h>
 #include<iostream>
 #include "Camera.h"
-#include "Input.h"
 Camera::Camera(float fov, float aspect_ratio, float zNear, float zFar)
 {
 	m_sCameraData = {};
@@ -72,21 +71,20 @@ const CameraData& Camera::getCameraData()
 	return m_sCameraData;
 }
 
+void Camera::setPitchAndYaw(float fpitch, float fyaw)
+{
+	m_sCameraData.pitch = fpitch;
+	m_sCameraData.yaw = fyaw;
+	m_sCameraData.forward.x= cos(glm::radians(m_sCameraData.pitch)) * sin(glm::radians(m_sCameraData.yaw ));
+	m_sCameraData.forward.y = sin(glm::radians(m_sCameraData.pitch));
+	m_sCameraData.forward.z = cos(glm::radians(m_sCameraData.pitch)) * -cos(glm::radians(m_sCameraData.yaw));
+	m_sCameraData.forward = glm::normalize(m_sCameraData.forward);
+	m_bDirty = true;
+}
+
 void Camera::UpdateCamera()
 {
-	glm::vec3 moveDir = { 0.0f,0.0f,0.0f };
-	if (Input::getKey(GLFW_KEY_UP)|| Input::getKey(GLFW_KEY_W))
-	{
-		moveDir = m_sCameraData.forward * (-1.0f);
-	}
-	if (Input::getKey(GLFW_KEY_LEFT) || Input::getKey(GLFW_KEY_A))
-	{
-	}
-	if (Input::getKey(GLFW_KEY_DOWN) || Input::getKey(GLFW_KEY_S))
-	{
-		moveDir = m_sCameraData.forward * (1.0f);
-	}
-	m_sCameraData.matView =glm::lookAt(m_sCameraData.pos, m_sCameraData.forward + m_sCameraData.pos, m_sCameraData.up);
+	m_sCameraData.matView = glm::lookAt(m_sCameraData.pos, m_sCameraData.forward + m_sCameraData.pos, m_sCameraData.up);
 	m_sCameraData.matProject = glm::perspective(m_sCameraData.fov, m_sCameraData.aspect_ratio, m_sCameraData.zNear, m_sCameraData.zFar);
 	m_sCameraData.matViewProject = m_sCameraData.matProject * m_sCameraData.matView;
 }

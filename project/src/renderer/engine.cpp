@@ -40,9 +40,11 @@ void Engine::start()
 	{
 		
 		render();
+		renderer->update();
 		renderer->render();
 		renderer->present();
 		window->update();
+	
 	}
 	window->release();
 

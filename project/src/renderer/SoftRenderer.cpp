@@ -6,6 +6,8 @@
 #include "Mesh.h"
 #include<array>
 #include <algorithm>
+#include "Input.h"
+#include <GLFW/glfw3.h>
 
 SoftRenderer::SoftRenderer()
 {
@@ -166,6 +168,58 @@ void SoftRenderer::present()
     glFlush();
 }
 
+void SoftRenderer::update()
+{
+    float currentFrame = glfwGetTime();
+    deltaTime = currentFrame - lastFrameTime;
+    lastFrameTime = currentFrame;
+
+    glm::vec3 moveDir = { 0.0f,0.0f,0.0f };
+	float cameraSpeed = 0.1f * deltaTime;
+    Camera* l_Camera = m_pScene->getCamera();
+    CameraData cameraData = l_Camera->getCameraData();
+    glm::vec3 cameraPos = cameraData.pos;
+    if (Input::getKey(GLFW_KEY_UP) || Input::getKey(GLFW_KEY_W))
+    {
+        moveDir += cameraData.forward * (1.0f);
+    }
+    if (Input::getKey(GLFW_KEY_LEFT) || Input::getKey(GLFW_KEY_A))
+    {
+        moveDir += glm::normalize(glm::cross(cameraData.forward, cameraData.up)) * (-1.0f);
+    }
+    if (Input::getKey(GLFW_KEY_DOWN) || Input::getKey(GLFW_KEY_S))
+    {
+        moveDir += cameraData.forward * (-1.0f);
+    }
+    if (Input::getKey(GLFW_KEY_RIGHT) || Input::getKey(GLFW_KEY_D))
+    {
+        moveDir += glm::normalize(glm::cross(cameraData.forward, cameraData.up)) * (1.0f);
+    }
+    if (Input::getKey(GLFW_KEY_Q))
+    {
+        moveDir += cameraData.up * (1.0f);
+    }
+    if (Input::getKey(GLFW_KEY_E))
+    {
+        moveDir += cameraData.up * (-1.0f);
+    }
+    cameraPos += cameraSpeed * moveDir;
+    l_Camera->setPos(cameraPos);
+
+    if (Input::mouseMoving && Input::getMouseButton(1))
+    {
+        float xoffset = Input::mouseMotion.x;
+        float yoffset = -Input::mouseMotion.y;
+        float sensitivity = 0.05f;
+        xoffset *= sensitivity;
+        yoffset *= sensitivity;
+        cameraData.pitch += yoffset;
+        cameraData.yaw += xoffset;
+        l_Camera->setPitchAndYaw(cameraData.pitch + yoffset, cameraData.yaw + xoffset);
+        Input::mouseMoving = false;
+    }
+}
+
 void SoftRenderer::clear()
 {
     std::fill(depth_buf.begin(), depth_buf.end(), -std::numeric_limits<float>::infinity());
@@ -222,6 +276,12 @@ void SoftRenderer::draw()
                         inv_trans * glm::vec4(t->normal[2], 0.0f)
                 };
 
+
+                if(std::abs(v[0].z) >1.f && std::abs(v[1].z) > 1.f&& std::abs(v[2].z) > 1.f)
+                {
+                    continue;
+                }
+
                 //Viewport transformation
                 for (auto& vert : v)
                 {
@@ -244,7 +304,10 @@ void SoftRenderer::draw()
                 //newtri.setColor(2, 148, 121.0, 92.0);
 
                 // Also pass view space vertice position
+
+                
                 rasterize(newtri, viewspace_pos);
+
             }
         }
     }
@@ -304,7 +367,7 @@ void SoftRenderer::rasterize(const Triangle& t, const std::array<glm::vec3, 3>& 
                     interpolated_texcoords.y = 0;
                 }
                 glm::vec3 interpolated_shadingcoords = alpha * view_pos[0] + beta * view_pos[1] + gamma * view_pos[2];
-                auto ind = (m_nHeight-j - 1) * m_nWidth + i;
+                auto ind = (j) * m_nWidth + i;
                 if (z_interpolated > depth_buf[ind])
                 {
                     depth_buf[ind] = z_interpolated;

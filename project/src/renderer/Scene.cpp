@@ -15,7 +15,7 @@ Scene::~Scene()
 
 void Scene::init()
 {
-	m_pCamera = new Camera(45,1,30,100);
+	m_pCamera = new Camera(45,1,.1f,100);
 	m_pCamera->setPos({0,0,1});
 }
 

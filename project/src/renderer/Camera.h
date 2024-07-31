@@ -16,7 +16,8 @@ struct CameraData
 	glm::mat4x4 matProject;
 	glm::mat4x4 matViewProject;
 	bool isOrtho;
-
+	float pitch;
+	float yaw;
 	CameraData() 
 	{
 		fov = 45.0f;
@@ -24,12 +25,14 @@ struct CameraData
 		zNear = 1.0f;
 		zFar = 1000.0f;
 		pos = { 0,0,10 };
-		forward = { 0,0,1 };
+		forward = { 0,0,-1.f };
 		up = { 0,1,0 };
 		matView = glm::mat4x4(1);
 		matProject = glm::mat4x4(1);
 		matViewProject = glm::mat4x4(1);
 		isOrtho = false;
+		pitch = 0.0f;
+		yaw = 0.0f;
 	}
 };
 
@@ -48,6 +51,7 @@ public:
 	void setAspectRatio(float aspect_ratio);
 	void setNear(float zNear);
 	void setFar(float zFar);
+	void setPitchAndYaw(float fpitch,float fyaw);
 	void setPos(glm::vec3 pos);
 	void setForward(glm::vec3 forward);
 	void setUp(glm::vec3 up);

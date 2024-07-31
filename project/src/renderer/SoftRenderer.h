@@ -17,7 +17,8 @@ private:
 	GLuint m_backBuffer;
 	int m_nWidth = 0;
 	int m_nHeight = 0;
-
+	float deltaTime = 0.0f;
+	float lastFrameTime = 0.0f;
 	struct light
 	{
 		glm::vec3 position;
@@ -33,6 +34,7 @@ public:
 	void init(std::shared_ptr<Scene> scene,int width,int height);
 	void render();
 	void present();
+	void update();
 private:
 	void clear();
 	void draw();
