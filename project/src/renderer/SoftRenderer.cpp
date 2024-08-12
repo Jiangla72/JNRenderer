@@ -108,7 +108,8 @@ void SoftRenderer::init(std::shared_ptr<Scene> scene,int width, int height)
         0, 1, 3,  // first Triangle
         1, 2, 3   // second Triangle
     };
-    
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
     glGenBuffers(1, &EBO);

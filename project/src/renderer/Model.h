@@ -12,5 +12,7 @@ public:
 	Model();
 	Model(const std::string& filename);
 	~Model();
+	void render();
+	void load(const std::string& obj);
 };
 

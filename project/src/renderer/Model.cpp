@@ -1,51 +1,13 @@
 #include "Mesh.h"
 #include "Triangle.h"
-#include "OBJ_Loader.hpp"
+//#include "OBJ_Loader.hpp"
+#include "tiny_obj_loader.h"
 #include <array>
 #include "Model.h"
-
+#include "Vertex.h"
 Model::Model(const std::string& filename)
 {
-    
-	objl::Loader loader;
-	loader.LoadFile(filename);
-	float area = 0;
-
-    for (size_t i = 0; i < loader.LoadedMeshes.size(); i++)
-    {
-        auto mesh = loader.LoadedMeshes[i];
-        Mesh* pMesh = new Mesh();
-        glm::vec3 min_vert = glm::vec3(std::numeric_limits<float>::infinity(),
-            std::numeric_limits<float>::infinity(),
-            std::numeric_limits<float>::infinity());
-        glm::vec3 max_vert = glm::vec3(-std::numeric_limits<float>::infinity(),
-            -std::numeric_limits<float>::infinity(),
-            -std::numeric_limits<float>::infinity());
-
-        for (int i = 0; i < mesh.Vertices.size(); i += 3) {
-            Triangle* t = new Triangle();
-
-            for (int j = 0; j < 3; j++) {
-                t->setVertex(j, glm::vec4(mesh.Vertices[i + j].Position.X, mesh.Vertices[i + j].Position.Y, mesh.Vertices[i + j].Position.Z, 1.0));
-                t->setNormal(j, glm::vec3(mesh.Vertices[i + j].Normal.X, mesh.Vertices[i + j].Normal.Y, mesh.Vertices[i + j].Normal.Z));
-                t->setTexCoord(j, glm::vec2(mesh.Vertices[i + j].TextureCoordinate.X, mesh.Vertices[i + j].TextureCoordinate.Y));
-                /*min_vert = glm::vec3(std::min(min_vert.x, vert.x),
-                    std::min(min_vert.y, vert.y),
-                    std::min(min_vert.z, vert.z));
-                max_vert = glm::vec3(std::max(max_vert.x, vert.x),
-                    std::max(max_vert.y, vert.y),
-                    std::max(max_vert.z, vert.z));*/
-            }
-
-            pMesh->triangles.push_back(t);
-        }
-
-        //for (auto& tri : pMesh->triangles) {
-        //    area += tri->area;
-        //}
-        pMesh->area = area;
-        m_vecMesh.push_back(pMesh);
-    }
+	load(filename);
 }
 
 Model::Model()
@@ -53,4 +15,82 @@ Model::Model()
 }
 Model::~Model()
 {
+}
+
+void Model::render()
+{
+	for each (auto mesh in m_vecMesh)
+	{
+		mesh->draw();
+	}
+}
+
+void Model::load(const std::string& obj)
+{
+    tinyobj::attrib_t                attrib;
+    std::vector<tinyobj::shape_t>    shapes;
+    std::vector<tinyobj::material_t> materials;
+    std::string                      warn, err;
+
+    if (!tinyobj::LoadObj(&attrib, &shapes, &materials, &warn, &err, obj.c_str()))
+    {
+        throw std::runtime_error(warn + err);
+    }
+
+
+    for (const auto& shape : shapes)
+    {
+        std::vector<Vertex>                  vertices;
+        std::vector<uint32_t>                indices;
+        std::unordered_map<Vertex, uint32_t> uniqueVertices{};
+
+		for (const auto& index : shape.mesh.indices)
+		{
+			Vertex vertex{};
+
+			vertex.pos = {
+				attrib.vertices[3 * index.vertex_index + 0],
+				attrib.vertices[3 * index.vertex_index + 1],
+				attrib.vertices[3 * index.vertex_index + 2] };
+
+			if (index.normal_index >= 0)
+				vertex.normal = {
+					attrib.normals[3 * index.normal_index + 0],
+					attrib.normals[3 * index.normal_index + 1],
+					attrib.normals[3 * index.normal_index + 2] };
+
+			if (index.texcoord_index >= 0)
+				vertex.texCoord = {
+					attrib.texcoords[2 * index.texcoord_index + 0],
+					1.0f - attrib.texcoords[2 * index.texcoord_index + 1] };
+
+			vertex.color = { 1.0f, 1.0f, 1.0f, 1.f };
+
+			if (uniqueVertices.count(vertex) == 0)
+			{
+				uniqueVertices[vertex] = static_cast<uint32_t>(vertices.size());
+				vertices.push_back(vertex);
+			}
+			indices.emplace_back(uniqueVertices[vertex]);
+		}
+
+		if (attrib.normals.empty())
+			Mesh::generateNormals(vertices, indices);
+
+		Mesh* mesh = new Mesh(indices, vertices);
+
+		for (int i = 0; i < indices.size(); i += 3)
+		{
+			Triangle* t = new Triangle();
+
+			for (int j = 0; j < 3; j++) {
+				t->setVertex(j, glm::vec4(vertices[indices[i+j]].pos, 1.f));
+				t->setNormal(j, glm::vec3(vertices[indices[i + j]].normal));
+				t->setTexCoord(j, glm::vec2(vertices[indices[i + j]].texCoord));
+			}
+
+			mesh->triangles.push_back(t);
+		}
+		m_vecMesh.push_back(mesh);
+    }
 }

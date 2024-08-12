@@ -19,11 +19,14 @@ project "renderer"
 		thirdparty.."/imgui/**.cpp",
 		thirdparty.."/imgui/**.hpp",
 		thirdparty.."/imgui/**.h",
+		thirdparty.."/tiny_obj_loader/**.h",
+		thirdparty.."/tiny_obj_loader/**.cc",
 	}
 	includedirs
     {
        thirdparty.."/glm",
        thirdparty.."/imgui",
+       thirdparty.."/tiny_obj_loader",
        thirdparty.."/glad/include",
        thirdparty.."/glfw/include",
     }

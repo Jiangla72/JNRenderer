@@ -82,7 +82,7 @@ void Window::init()
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	m_pWindow =  glfwCreateWindow(800, 600, "JNRenderer", nullptr, nullptr);
+	m_pWindow =  glfwCreateWindow(600, 600, "JNRenderer", nullptr, nullptr);
 	if (m_pWindow == nullptr)
 	{
 		std::cout << "Error : failed create window!" << std::endl;
@@ -105,12 +105,14 @@ void Window::init()
 
 void Window::update()
 {
-
 	_ProcessInput(m_pWindow);
-	glfwSwapBuffers(m_pWindow);
 	glfwPollEvents();
 }
 
+void Window::present()
+{
+	glfwSwapBuffers(m_pWindow);
+}
 
 void Window::release()
 {

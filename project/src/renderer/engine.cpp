@@ -3,7 +3,7 @@
 #include "Model.h"
 #include "SoftRenderer.h"
 #include "Scene.h"
-
+#include"Renderer.h"
 Engine* Engine::engine = nullptr;
 Engine::Engine()
 {
@@ -30,27 +30,46 @@ void Engine::start()
 
 	Model bunny("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\bunny\\bunny.obj");
 
-	renderer = std::make_shared<SoftRenderer>();
+	//renderer = std::make_shared<SoftRenderer>();
+	renderer = std::make_shared<Renderer>();
 	scene = std::make_shared <Scene>();
-	renderer->init(scene, 640, 640);
+	renderer->init();
 	scene->init();
 	scene->Add(&bunny);
 
 	while (!window->ShouldClose())
 	{
+		_update();
+
+
+
+
+
+		_render();
+
+
+
 		
-		render();
-		renderer->update();
-		renderer->render();
-		renderer->present();
-		window->update();
 	
+		_present();
 	}
 	window->release();
 
 }
 
 
-void Engine::render()
+void Engine::_render()
 {
+	renderer->render(scene);
 };
+
+void Engine::_update()
+{
+	window->update();
+	scene->update();
+}
+
+void Engine::_present()
+{
+	window->present();
+}

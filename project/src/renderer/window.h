@@ -13,6 +13,7 @@ public:
 	void init();
 	void update();
 	void release();
+	void present();
 public:
 	bool ShouldClose();
 private:

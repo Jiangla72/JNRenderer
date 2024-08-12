@@ -12,6 +12,8 @@ public:
 private:
 	std::vector<Model*> models;
 	Camera* m_pCamera = nullptr;
+	float deltaTime = 0.0f;
+	float lastFrameTime = 0.0f;
 public:
 	Scene();
 	~Scene();
@@ -22,4 +24,6 @@ public:
 	void Add(const std::string& filename);
 	Camera* getCamera();
 	const std::vector<Model*>& getModels();
+	void update();
+
 };
