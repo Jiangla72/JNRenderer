@@ -6,6 +6,7 @@
 #include"Model.h"
 #include"Camera.h"
 #include"Input.h"
+#include "Light.h"
 Scene::Scene()
 {
 }
@@ -39,6 +40,11 @@ void Scene::Add(const std::string& filename)
 	models.push_back(mesh);
 }
 
+void Scene::Add(Light* light)
+{
+    lights.push_back(light);
+}
+
 Camera* Scene::getCamera()
 {
 	return m_pCamera;
@@ -50,6 +56,12 @@ const std::vector<Model*>& Scene::getModels()
 	// TODO: 在此处插入 return 语句
 }
 
+const std::vector<Light*>& Scene::getLights()
+{
+    return lights;
+    // TODO: 在此处插入 return 语句
+}
+
 void Scene::update()
 {
     float currentFrame = glfwGetTime();
@@ -57,7 +69,7 @@ void Scene::update()
     lastFrameTime = currentFrame;
 
     glm::vec3 moveDir = { 0.0f,0.0f,0.0f };
-    float cameraSpeed = 0.1f * deltaTime;
+    float cameraSpeed = 0.2f * deltaTime;
     Camera* l_Camera = getCamera();
     CameraData cameraData = l_Camera->getCameraData();
     glm::vec3 cameraPos = cameraData.pos;

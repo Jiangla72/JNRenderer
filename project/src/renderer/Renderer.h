@@ -15,6 +15,14 @@ private:
 	unsigned int VBO, VAO;
 	Shader* m_pShader = nullptr;
 	float frame = 0;
+
+	//struct Light
+	//{
+	//	glm::vec3 position;
+	//	float padding1 = 0;
+	//	glm::vec3 intensity;
+	//	float padding2 = 0;
+	//} light;
 public:
 	Renderer();
 	~Renderer();

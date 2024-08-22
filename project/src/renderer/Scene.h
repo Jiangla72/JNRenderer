@@ -4,6 +4,7 @@
 #include <string>
 class Model;
 class Camera;
+struct Light;
 class JNAPI Scene
 {
 public:
@@ -11,6 +12,7 @@ public:
 	int height = 640;
 private:
 	std::vector<Model*> models;
+	std::vector<Light*> lights;
 	Camera* m_pCamera = nullptr;
 	float deltaTime = 0.0f;
 	float lastFrameTime = 0.0f;
@@ -22,8 +24,10 @@ public:
 	void release();
 	void Add(Model* object);
 	void Add(const std::string& filename);
+	void Add(Light* light);
 	Camera* getCamera();
 	const std::vector<Model*>& getModels();
+	const std::vector<Light*>& getLights();
 	void update();
 
 };

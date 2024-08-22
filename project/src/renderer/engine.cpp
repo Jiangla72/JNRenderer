@@ -3,7 +3,8 @@
 #include "Model.h"
 #include "SoftRenderer.h"
 #include "Scene.h"
-#include"Renderer.h"
+#include "Renderer.h"
+#include "Light.h"
 Engine* Engine::engine = nullptr;
 Engine::Engine()
 {
@@ -28,15 +29,33 @@ void Engine::start()
 	window = std::make_unique<Window>();
 	window->init();
 
-	Model bunny("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\bunny\\bunny.obj");
+	//Model bunny("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\bunny\\bunny.obj");
+	Model* bunny = new Model("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj");
 
 	//renderer = std::make_shared<SoftRenderer>();
 	renderer = std::make_shared<Renderer>();
 	scene = std::make_shared <Scene>();
 	renderer->init();
 	scene->init();
-	scene->Add(&bunny);
+	scene->Add(bunny);
 
+	Light* light = new Light();
+	light->position = { 20, 0, 50 ,0};
+	light->intensity = { 500, 500, 500 ,0 };
+	light->color = { 0.2, 0, 0.21 ,0 };
+	Light* light1 = new Light();
+	light1->position = { 0, 0, 50 ,0 };
+	light1->intensity = { 500, 500, 500 ,0 };
+	light1->color = { 0.53, 0.12, 0.8 ,0 };
+
+	Light* light2 = new Light();
+	light2->position = { 20, 0, 50 ,0 };
+	light2->intensity = { 500, 500, 500 ,0 };
+	light2->color = { 0.6, 1, 0.6 ,0 };
+
+	scene->Add(light);
+	scene->Add(light1);
+	scene->Add(light2);
 	while (!window->ShouldClose())
 	{
 		_update();
@@ -58,8 +77,7 @@ void Engine::start()
 }
 
 
-void Engine::_render()
-{
+void Engine::_render(){
 	renderer->render(scene);
 };
 
