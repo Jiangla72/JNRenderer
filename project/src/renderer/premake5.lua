@@ -21,6 +21,8 @@ project "renderer"
 		thirdparty.."/imgui/**.h",
 		thirdparty.."/tiny_obj_loader/**.h",
 		thirdparty.."/tiny_obj_loader/**.cc",
+		thirdparty.."/spdlog/**.h",
+
 	}
 	includedirs
     {
@@ -29,6 +31,7 @@ project "renderer"
        thirdparty.."/tiny_obj_loader",
        thirdparty.."/glad/include",
        thirdparty.."/glfw/include",
+       thirdparty.."/",
     }
 
 	filter "system:windows"

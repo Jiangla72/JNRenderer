@@ -10,6 +10,7 @@ in VS_OUT
 
 out vec4 FragColor;
 uniform highp vec3 cameraPos;
+uniform sampler2D texture1;
 
 struct Light
 {
@@ -48,5 +49,5 @@ void main()
 	}
 
 	//result_color *= fs_in.i_color;
-	FragColor = vec4(result_color, 1.0f);
-}; 
+	FragColor = texture(texture1, fs_in.i_texCoord) * vec4(result_color, 1.0);
+	}; 

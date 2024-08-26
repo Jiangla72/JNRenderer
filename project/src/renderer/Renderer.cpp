@@ -10,6 +10,7 @@
 #include <GLFW/glfw3.h>
 #include "Shader.h"
 #include "Light.h"
+#include "Texture.h"
 Renderer::Renderer()
 {
 }
@@ -23,34 +24,7 @@ void Renderer::init()
 {
 	m_pShader = new Shader("D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.vsh", "D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.fsh");
 	m_pShader->init();
-
-	//light.position = { 20, 0, 20 };
-	//light.intensity = { 500, 500, 500};
-	//GLuint uboLight;
-	//glGenBuffers(1, &uboLight);
-	//glBindBuffer(GL_UNIFORM_BUFFER, uboLight);
-	//glBufferData(GL_UNIFORM_BUFFER, 32, &light, GL_STATIC_DRAW);
-	//glBindBuffer(GL_UNIFORM_BUFFER, 0);
-
-	//GLuint lightIndex = glGetUniformBlockIndex(m_pShader->getProgram(), "Light");
-	//glUniformBlockBinding(m_pShader->getProgram(), lightIndex, 0);
-	//glBindBufferBase(GL_UNIFORM_BUFFER, 0, uboLight);
-	//glUseProgram(shaderProgram);
-//#pragma region Create VAO
-//	float vertices[] = {
-//	-0.5f, -0.28867f, 0.0f,
-//	 0.5f, -0.28867f, 0.0f,
-//	 0.0f,  0.57773f, 0.0f
-//	};
-//	glGenVertexArrays(1, &VAO);
-//	glGenBuffers(1, &VBO);
-//
-//	glBindVertexArray(VAO);
-//	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-//	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-//	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-//	glEnableVertexAttribArray(0);
-//#pragma endregion
+	texture1 = new Texture("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
 
 }
 
@@ -68,12 +42,12 @@ void Renderer::render(std::shared_ptr<Scene> scene)
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	Camera* camera= scene->getCamera();
 	CameraData cameraData = camera->getCameraData();
-	unsigned int mvpMatrix = glGetUniformLocation(m_pShader->getProgram(), "mvpMatrix");
-	glUniformMatrix4fv(mvpMatrix, 1, GL_FALSE, glm::value_ptr(cameraData.matViewProject));
 
-	unsigned int cameraPos = glGetUniformLocation(m_pShader->getProgram(), "cameraPos");
-	glUniform3fv(cameraPos, 1, glm::value_ptr(cameraData.pos));
+	m_pShader->setUniformMatrix4fv("mvpMatrix", cameraData.matViewProject);
+	m_pShader->setUniform3fv("cameraPos", cameraData.pos);
 
+	texture1->BindTexture(17);
+	m_pShader->useTexture("texture1", 17);
 	struct LightInfoForGPU
 	{
 		Light light[8];

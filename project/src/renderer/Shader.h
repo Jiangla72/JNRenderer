@@ -38,6 +38,7 @@ public:
 	bool setUniform3fv(const std::string& str, const glm::vec3& vec3Value);
 	bool setUniformMatrix4fv(const std::string& str, const glm::mat4x4& matValue);
 	bool setUniformBuffer(const std::string& str, const void* data, size_t uSize);
+	bool useTexture(const std::string& str, uint16_t uLocation);
 private:
 	bool _CreateUniformBuffer(const std::string& name,size_t uSize);
 };

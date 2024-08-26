@@ -7,13 +7,14 @@ class Renderer;
 class Scene;
 class JNAPI Engine
 {
-private:
-	Engine();
+public:
 	~Engine();
+	Engine();
+	
 
 public:
-	static Engine* engine;
-	static Engine* getEngine();
+	static std::shared_ptr <Engine> engine;
+	static std::shared_ptr <Engine> getEngine();
 	void start(); 
 private:
 	void _render();
@@ -28,4 +29,5 @@ private:
 	//std::shared_ptr<SoftRenderer> renderer = nullptr;
 	std::shared_ptr<Renderer> renderer = nullptr;
 	std::shared_ptr<Scene> scene = nullptr;
+	
 };

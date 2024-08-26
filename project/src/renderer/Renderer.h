@@ -9,13 +9,14 @@ class Triangle;
 class Scene;
 class Camera;
 class Shader;
+class Texture;
 class JNAPI Renderer
 {
 private:
 	unsigned int VBO, VAO;
 	Shader* m_pShader = nullptr;
 	float frame = 0;
-
+	Texture* texture1 = nullptr;
 	//struct Light
 	//{
 	//	glm::vec3 position;

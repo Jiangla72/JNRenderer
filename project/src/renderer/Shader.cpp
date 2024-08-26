@@ -141,6 +141,12 @@ bool Shader::setUniformBuffer(const std::string& str, const void* data, size_t u
 	return true;
 }
 
+bool Shader::useTexture(const std::string& str, uint16_t uLocation)
+{
+	glUniform1i(glGetUniformLocation(shaderProgram, str.c_str()), uLocation); //  ÷∂Ø…Ë÷√
+	return true;
+}
+
 bool Shader::_CreateUniformBuffer(const std::string& name, size_t uSize)
 {
 	auto it = mapStrtoUbo.find(name);

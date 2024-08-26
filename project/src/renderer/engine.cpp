@@ -5,7 +5,8 @@
 #include "Scene.h"
 #include "Renderer.h"
 #include "Light.h"
-Engine* Engine::engine = nullptr;
+#include "LogSystem.h"
+std::shared_ptr <Engine> Engine::engine = nullptr;
 Engine::Engine()
 {
 }
@@ -14,24 +15,27 @@ Engine::~Engine()
 {
 }
 
-Engine* Engine::getEngine()
+std::shared_ptr <Engine> Engine::getEngine()
 {
 	if (engine==nullptr)
 	{
-		engine = new Engine();
+		engine = std::make_shared<Engine>();
 	}
 	return engine;
 }
 
 void Engine::start()
 {
-
+	LogSystem::init();
+	JNLOGINFO("LogSystem Inited.");
 	window = std::make_unique<Window>();
 	window->init();
 
-	//Model bunny("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\bunny\\bunny.obj");
-	Model* bunny = new Model("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj");
 
+	//Model bunny("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\bunny\\bunny.obj");
+	std::string pathModel = "D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj";
+	Model* bunny = new Model(pathModel);
+	JNLOGERROR("Create Model at path : {} , with mesh count : {}", pathModel,bunny->m_vecMesh.size());
 	//renderer = std::make_shared<SoftRenderer>();
 	renderer = std::make_shared<Renderer>();
 	scene = std::make_shared <Scene>();
