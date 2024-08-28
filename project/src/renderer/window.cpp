@@ -1,8 +1,9 @@
 #include "window.h"
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include<iostream>
-#include"Input.h"
+#include <iostream>
+#include "Input.h"
+#include "LogSystem.h"
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
 	if (action == GLFW_PRESS)
@@ -38,13 +39,13 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 	if (action == GLFW_PRESS) switch (button)
 	{
 	case GLFW_MOUSE_BUTTON_LEFT:
-		std::cout<<"Mosue left button clicked!"<<std::endl;
+		JNLOGINFO("Mosue left button clicked!");
 		break;
 	case GLFW_MOUSE_BUTTON_MIDDLE:
-		std::cout << "Mosue middle button clicked!" << std::endl;
+		JNLOGINFO("Mosue middle button clicked!");
 		break;
 	case GLFW_MOUSE_BUTTON_RIGHT:
-		std::cout << "Mosue right button clicked!" << std::endl;
+		JNLOGINFO("Mosue right button clicked!");
 		break;
 	default:
 		break;
@@ -85,14 +86,14 @@ void Window::init()
 	m_pWindow =  glfwCreateWindow(600, 600, "JNRenderer", nullptr, nullptr);
 	if (m_pWindow == nullptr)
 	{
-		std::cout << "Error : failed create window!" << std::endl;
+		JNLOGERROR("Error : failed create window!");
 		glfwTerminate();
 		return;
 	}
 	glfwMakeContextCurrent(m_pWindow);
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
 	{
-		std::cout << " Error : failed load gl func ptrs!" << std::endl;
+		JNLOGERROR("Error : failed load gl func ptrs!");
 		return;
 	}
 	glfwSwapInterval(1);

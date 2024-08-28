@@ -35,7 +35,7 @@ void Engine::start()
 	//Model bunny("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\bunny\\bunny.obj");
 	std::string pathModel = "D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj";
 	Model* bunny = new Model(pathModel);
-	JNLOGERROR("Create Model at path : {} , with mesh count : {}", pathModel,bunny->m_vecMesh.size());
+	JNLOGINFO("Create Model at path : {} , with mesh count : {}", pathModel,bunny->m_vecMesh.size());
 	//renderer = std::make_shared<SoftRenderer>();
 	renderer = std::make_shared<Renderer>();
 	scene = std::make_shared <Scene>();

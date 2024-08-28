@@ -1,8 +1,8 @@
 #include "Texture.h"
 #include <glad/glad.h>
 #include "stb_image.h"
-#include<iostream>
-
+#include <iostream>
+#include "LogSystem.h"
 Texture::Texture(uint16_t width,uint16_t height, ColorChanel enmColorChanel)
 	:width(width),height(height)
 {
@@ -44,13 +44,13 @@ Texture::Texture(const std::string& texturePath)
 			format = GL_RGBA;
 		}
 		else
-			std::cout << "加载的纹理通道数不支持！nrChannels:"<< nrChannels << std::endl;
+			JNLOGERROR("加载的纹理通道数不支持！nrChannels: {}", nrChannels);
 		glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
 		glGenerateMipmap(GL_TEXTURE_2D);
 	}
 	else
 	{
-		std::cout << "Failed to load texture" << std::endl;
+		JNLOGERROR("Failed to load texture");
 	}
 	stbi_image_free(data);
 	glBindTexture(GL_TEXTURE_2D, 0);
@@ -73,7 +73,7 @@ int Texture::ConvertEnmColorChanelToGLFormat(ColorChanel enmType)
 		format = GL_RGBA;
 		break;
 	default:
-		std::cout << "不支持的颜色通道类型！ColorChanel:" << enmType << std::endl;
+		JNLOGERROR("不支持的ColorChanel类型！");
 		break;
 	}
 	return format;

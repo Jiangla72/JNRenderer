@@ -1,16 +1,17 @@
 #include "Shader.h"
-#include"Triangle.h"
-#include"Scene.h"
-#include"Camera.h"
-#include"Model.h"
+#include "Triangle.h"
+#include "Scene.h"
+#include "Camera.h"
+#include "Model.h"
 #include "Mesh.h"
-#include<array>
-#include <algorithm>
 #include "Input.h"
+#include "LogSystem.h"
 #include <GLFW/glfw3.h>
-#include <fstream>
 #include <iostream>
-#include<sstream>
+#include <array>
+#include <algorithm>
+#include <fstream>
+#include <sstream>
 Shader::Shader(const char* vsfilepath, const char* fsfilepath)
 	:vertexFilePath(vsfilepath), fragmentFilePath(fsfilepath)
 {
@@ -34,7 +35,7 @@ void Shader::init()
 	glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
 	if (!success) {
 		glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-		std::cout << "ERROR::SHADER::LINK::COMPILATION_FAILED\n" << infoLog << std::endl;
+		JNLOGERROR("ERROR::SHADER::LINK::COMPILATION_FAILED\n{}\n", infoLog);
 	}
 
 	glDeleteShader(vertexShader);
@@ -67,7 +68,7 @@ void Shader::CompileShader()
 	if (!success)
 	{
 		glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
-		std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+		JNLOGERROR("ERROR::SHADER::VERTEX::COMPILATION_FAILED\n{}\n", infoLog);
 	}
 
 	fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
@@ -77,7 +78,7 @@ void Shader::CompileShader()
 	if (!success)
 	{
 		glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
-		std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
+		JNLOGERROR("ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n{}\n", infoLog);
 	}
 }
 
@@ -91,7 +92,7 @@ bool Shader::setUniform3fv(const std::string& str, const glm::vec3& vec3Value)
 	int nIndex = glGetUniformLocation(getProgram(), str.c_str());
 	if (nIndex == -1)
 	{
-		std::cout << "找不到" << str << " Uniform3fv!" << std::endl;
+		JNLOGERROR("找不到 {} Uniform3fv!\n", str);
 		return false;
 	}
 
@@ -104,7 +105,7 @@ bool Shader::setUniformMatrix4fv(const std::string& str, const glm::mat4x4& matV
 	int nIndex = glGetUniformLocation(getProgram(), str.c_str());
 	if (nIndex == -1)
 	{
-		std::cout << "找不到" << str << " UniformMatrix4fv!" << std::endl;
+		JNLOGERROR("找不到 {} UniformMatrix4fv!\n", str);
 		return false;
 	}
 	glUniformMatrix4fv(nIndex, 1, GL_FALSE, glm::value_ptr(matValue));
@@ -119,9 +120,8 @@ bool Shader::setUniformBuffer(const std::string& str, const void* data, size_t u
 	{
 		if (!_CreateUniformBuffer(str, uSize))
 		{
-			std::cout << "找不到" << str << " UniformBuffer!" << std::endl;
+			JNLOGERROR("找不到 {} UniformBuffer!\n", str);
 			return false;
-
 		}
 	}
 	bufferData = mapStrtoUbo[str];
@@ -132,7 +132,7 @@ bool Shader::setUniformBuffer(const std::string& str, const void* data, size_t u
 	GLuint uIndex = glGetUniformBlockIndex(getProgram(), str.c_str());
 	if (uIndex == GL_INVALID_INDEX)
 	{
-		std::cout << "shader中找不到" << str << " UniformBuffer!" << std::endl;
+		JNLOGERROR("shader中找不到 {} UniformBuffer!\n", str);
 		return false;
 	}
 	glUniformBlockBinding(getProgram(), uIndex, bufferData.uBinding);
@@ -152,7 +152,7 @@ bool Shader::_CreateUniformBuffer(const std::string& name, size_t uSize)
 	auto it = mapStrtoUbo.find(name);
 	if (it != mapStrtoUbo.end())
 	{
-		std::cout << name << "UnifomrBuffer已存在" << std::endl;
+		JNLOGERROR("{} UnifomrBuffer已存在!\n", name);
 		return false;
 	}
 	UniformBufferData uniformBuffer;
