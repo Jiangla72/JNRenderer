@@ -5,7 +5,7 @@
 
 struct Vertex;
 class Triangle;
-class Mesh:public Object
+class Mesh
 {
 public:
 	std::unique_ptr<glm::vec3[]> vertices;

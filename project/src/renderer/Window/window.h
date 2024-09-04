@@ -1,5 +1,5 @@
 #pragma once
-#include "core.h"
+#include "Base/core.h"
 
 class GLFWwindow;
 class JNAPI Window

@@ -22,15 +22,19 @@ project "renderer"
 		thirdparty.."/tiny_obj_loader/**.h",
 		thirdparty.."/tiny_obj_loader/**.cc",
 		thirdparty.."/spdlog/**.h",
+		thirdparty.."/stb/**.h",
+		thirdparty.."/stb/**.cpp",
 
 	}
 	includedirs
     {
+	   "./",
        thirdparty.."/glm",
        thirdparty.."/imgui",
        thirdparty.."/tiny_obj_loader",
        thirdparty.."/glad/include",
        thirdparty.."/glfw/include",
+       thirdparty.."/stb",
        thirdparty.."/",
     }
 

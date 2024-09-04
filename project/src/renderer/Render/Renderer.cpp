@@ -1,16 +1,18 @@
 #include "Renderer.h"
-#include"Triangle.h"
-#include"Scene.h"
-#include"Camera.h"
-#include"Model.h"
+#include "Base/Input.h"
+
+#include "Triangle.h"
+#include "Camera.h"
+#include "Model.h"
 #include "Mesh.h"
-#include<array>
-#include <algorithm>
-#include "Input.h"
-#include <GLFW/glfw3.h>
 #include "Shader.h"
 #include "Light.h"
 #include "Texture.h"
+#include "Scene/Scene.h"
+#include <array>
+#include <algorithm>
+#include <GLFW/glfw3.h>
+
 Renderer::Renderer()
 {
 }
@@ -34,7 +36,7 @@ void Renderer::render(std::shared_ptr<Scene> scene)
 	//frame = frame > 360 ? 1 : frame + 1.f;s
 	
 	 m_pShader->use();
-	 const std::vector<Model*>& models = scene->getModels();
+	 const std::vector<std::shared_ptr<Model>>& models = scene->getModels();
 	 const std::vector<Light*>& lights = scene->getLights();
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);

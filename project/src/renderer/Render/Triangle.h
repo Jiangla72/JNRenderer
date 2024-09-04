@@ -1,8 +1,7 @@
 #pragma once
-#include "Object.h"
 #include <glm/glm.hpp>
 
-class Triangle : public Object
+class Triangle
 {
 public:
     glm::vec4 v[3]; /*the original coordinates of the triangle, v0, v1, v2 in counter clockwise order*/

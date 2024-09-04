@@ -1,12 +1,13 @@
+#include "Scene.h"
+#include "Base/Input.h"
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include<iostream>
-#include "Scene.h"
-#include "Mesh.h"
-#include"Model.h"
-#include"Camera.h"
-#include"Input.h"
-#include "Light.h"
+#include "Render/Mesh.h"
+#include "Render/Model.h"
+#include "Render/Camera.h"
+#include "Render/Light.h"
+#include "Resource/ResourceManager.h"
 Scene::Scene()
 {
 }
@@ -23,21 +24,19 @@ void Scene::init()
 
 void Scene::release()
 {
-	for each (auto model in models)
-	{
-		delete model;
-	}
 }
 
-void Scene::Add(Model* object)
+void Scene::Add(std::shared_ptr<Model> object)
 {
+  
 	models.push_back(object);
 }
 
 void Scene::Add(const std::string& filename)
 {
-	Model* mesh = new Model(filename);
-	models.push_back(mesh);
+    std::shared_ptr<Model> model = std::make_shared<Model>();
+    model = ResourceManager::GetResource<Model>(filename);
+    models.push_back(model);
 }
 
 void Scene::Add(Light* light)
@@ -50,7 +49,7 @@ Camera* Scene::getCamera()
 	return m_pCamera;
 }
 
-const std::vector<Model*>& Scene::getModels()
+const std::vector<std::shared_ptr<Model>>& Scene::getModels()
 {
 	return models;
 	// TODO: 在此处插入 return 语句

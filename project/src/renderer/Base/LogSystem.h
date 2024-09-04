@@ -1,5 +1,5 @@
 #pragma once
-#include "core.h"
+#include "Base/core.h"
 #include "spdlog/spdlog.h"
 
 class JNAPI LogSystem

@@ -1,12 +1,12 @@
 #include "SoftRenderer.h"
-#include"Triangle.h"
-#include"Scene.h"
-#include"Camera.h"
-#include"Model.h"
+#include "Base/Input.h"
+#include "Triangle.h"
+#include "Scene/Scene.h"
+#include "Camera.h"
+#include "Model.h"
 #include "Mesh.h"
-#include<array>
+#include <array>
 #include <algorithm>
-#include "Input.h"
 #include <GLFW/glfw3.h>
 
 SoftRenderer::SoftRenderer()

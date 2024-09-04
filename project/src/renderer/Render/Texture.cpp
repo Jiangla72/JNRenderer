@@ -1,8 +1,9 @@
 #include "Texture.h"
-#include <glad/glad.h>
+#include "Base/LogSystem.h"
 #include "stb_image.h"
+
+#include <glad/glad.h>
 #include <iostream>
-#include "LogSystem.h"
 Texture::Texture(uint16_t width,uint16_t height, ColorChanel enmColorChanel)
 	:width(width),height(height)
 {

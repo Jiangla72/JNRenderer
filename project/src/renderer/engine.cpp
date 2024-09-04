@@ -1,11 +1,13 @@
 #include "engine.h"
-#include "window.h"
-#include "Model.h"
-#include "SoftRenderer.h"
-#include "Scene.h"
-#include "Renderer.h"
-#include "Light.h"
-#include "LogSystem.h"
+#include "Base/LogSystem.h"
+
+#include "Window/window.h"
+#include "Render/Model.h"
+#include "Render/SoftRenderer.h"
+#include "Render/Renderer.h"
+#include "Render/Light.h"
+#include "Scene/Scene.h"
+#include "Resource/ResourceManager.h"
 std::shared_ptr <Engine> Engine::engine = nullptr;
 Engine::Engine()
 {
@@ -28,21 +30,23 @@ void Engine::start()
 {
 	LogSystem::init();
 	JNLOGINFO("LogSystem Inited.");
+	ResourceManager::Init();
+	JNLOGINFO("ResManager Inited.");
+
 	window = std::make_unique<Window>();
 	window->init();
 
 
-	//Model bunny("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\bunny\\bunny.obj");
 	std::string pathModel = "D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj";
-	Model* bunny = new Model(pathModel);
+	std::shared_ptr<Model> bunny = ResourceManager::GetResource<Model>(pathModel);
 	JNLOGINFO("Create Model at path : {} , with mesh count : {}", pathModel,bunny->m_vecMesh.size());
+
 	//renderer = std::make_shared<SoftRenderer>();
 	renderer = std::make_shared<Renderer>();
 	scene = std::make_shared <Scene>();
 	renderer->init();
 	scene->init();
 	scene->Add(bunny);
-
 	Light* light = new Light();
 	light->position = { 20, 0, 50 ,0};
 	light->intensity = { 500, 500, 500 ,0 };
@@ -66,8 +70,7 @@ void Engine::start()
 
 
 
-
-
+		
 		_render();
 
 

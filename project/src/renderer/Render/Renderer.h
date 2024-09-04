@@ -1,9 +1,9 @@
 #pragma once
-#include "core.h"
+#include "Base/core.h"
 #include <glm/glm.hpp>
-#include<vector>
-#include<glad/glad.h>
-#include<gl/GL.h>
+#include <vector>
+#include <glad/glad.h>
+#include <gl/GL.h>
 #include <memory>
 class Triangle;
 class Scene;

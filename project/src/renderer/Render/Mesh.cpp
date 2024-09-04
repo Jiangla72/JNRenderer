@@ -1,6 +1,6 @@
 #include "Mesh.h"
 #include "Triangle.h"
-#include"Vertex.h"
+#include "Vertex.h"
 #include <array>
 
 #include<glad/glad.h>

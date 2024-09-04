@@ -1,11 +1,11 @@
 #include "Shader.h"
+#include "Base/Input.h"
+#include "Base/LogSystem.h"
 #include "Triangle.h"
-#include "Scene.h"
 #include "Camera.h"
 #include "Model.h"
 #include "Mesh.h"
-#include "Input.h"
-#include "LogSystem.h"
+#include "Scene/Scene.h"
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <array>

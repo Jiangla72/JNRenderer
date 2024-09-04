@@ -1,2 +1,3 @@
-[2024-08-26 23:10:38.252] [JNLog] [info] LogSystem Inited.
-[2024-08-26 23:10:38.442] [JNLog] [error] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-05 00:02:17.903] [JNLog] [info] LogSystem Inited.
+[2024-09-05 00:02:17.903] [JNLog] [info] ResManager Inited.
+[2024-09-05 00:02:55.340] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1

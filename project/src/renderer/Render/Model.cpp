@@ -1,20 +1,39 @@
 #include "Mesh.h"
 #include "Triangle.h"
-//#include "OBJ_Loader.hpp"
 #include "tiny_obj_loader.h"
 #include <array>
 #include "Model.h"
 #include "Vertex.h"
-Model::Model(const std::string& filename)
-{
-	load(filename);
-}
 
 Model::Model()
 {
 }
 Model::~Model()
 {
+}
+
+void Model::Init()
+{
+}
+
+void Model::Release()
+{
+}
+
+const std::string& Model::GetName() const
+{
+	// TODO: 在此处插入 return 语句
+	return std::string();
+}
+
+uint32_t Model::GetSize() const
+{
+	return 0;
+}
+
+ResourceType Model::GetType()
+{
+	return ResourceType::eModel;
 }
 
 void Model::render()
@@ -25,7 +44,7 @@ void Model::render()
 	}
 }
 
-void Model::load(const std::string& obj)
+void Model::_Load(const std::string& obj)
 {
     tinyobj::attrib_t                attrib;
     std::vector<tinyobj::shape_t>    shapes;
