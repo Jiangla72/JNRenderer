@@ -8,13 +8,13 @@
 class Triangle;
 class Scene;
 class Camera;
-class Shader;
+class ShaderModule;
 class Texture;
 class JNAPI Renderer
 {
 private:
 	unsigned int VBO, VAO;
-	Shader* m_pShader = nullptr;
+	std::shared_ptr<ShaderModule> m_pShaderModule = nullptr;
 	float frame = 0;
 	Texture* texture1 = nullptr;
 	//struct Light

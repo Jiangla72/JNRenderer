@@ -72,6 +72,10 @@ public:
 	template <typename T>
 	static std::shared_ptr<T> GetResource(const std::string& resPath)
 	{
+		if (resPath.empty())
+		{
+			return nullptr;
+		}
 		std::hash<std::string> stringHash;
 		size_t hash = stringHash(resPath);
 		if (resMgr->m_mapPathToRes.find(hash) == resMgr->m_mapPathToRes.end())
@@ -85,11 +89,13 @@ public:
 			ILoader* loader = nullptr;
 			if (resMgr->m_mapTypeToMgr.find(typeid(T).hash_code()) == resMgr->m_mapTypeToMgr.end())
 			{
-				if (resMgr->RegisterRersourceType<T>())
+				if (!resMgr->RegisterRersourceType<T>())
 				{
-					loader = resMgr->m_mapTypeToMgr[typeid(T).hash_code()];
+					JNLOGERROR("×¢²áÊ§°Ü, type : {}", typeid(T).name());
 				}
 			}
+			loader = resMgr->m_mapTypeToMgr[typeid(T).hash_code()];
+
 			if (loader)
 			{
 				 count = t.use_count();
@@ -105,7 +111,7 @@ public:
 		}
 		else
 		{
-			return std::dynamic_pointer_cast<Model>(resMgr->m_mapPathToRes[hash]);
+			return std::dynamic_pointer_cast<T>(resMgr->m_mapPathToRes[hash]);
 		}
 		
 	};

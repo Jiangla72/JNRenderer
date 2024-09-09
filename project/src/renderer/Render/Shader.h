@@ -1,44 +1,43 @@
 #pragma once
 #include "Base/core.h"
-#include <glm/glm.hpp>
-#include <vector>
+#include "Resource/IResource.h"
 #include <glad/glad.h>
 #include <gl/GL.h>
-#include <memory>
 #include <string>
 class Triangle;
 class Scene;
 class Camera;
-class JNAPI Shader
+
+enum ShaderType
+{
+	ST_Unknown,
+	ST_Vertex,
+	ST_Fragment,
+	ST_Geometry,
+	ST_Hull,
+	ST_Domin,
+	ST_Compute,
+};
+class JNAPI Shader :public IResource
 {
 private:
-	std::string vertexFilePath;
-	std::string fragmentFilePath;
-	unsigned int vertexShader;
-	unsigned int fragmentShader;
-	unsigned int shaderProgram;
-	int nBinding = 0;
-	struct UniformBufferData
-	{
-		uint32_t uUboIndex = -1;
-		uint32_t uBinding = -1;
-		size_t uSize = 0;
-	};
-	std::unordered_map<std::string, UniformBufferData> mapStrtoUbo;
+	unsigned int m_uShaderHandle;
+	ShaderType m_eType = ST_Unknown;
 public:
-	Shader(const char* vsfilepath, const char* fsfilepath);
+	Shader();
 	~Shader();
-	auto getProgram()
-	{
-		return shaderProgram;
-	}
-	void init();
-	void CompileShader();
-	void use();
-	bool setUniform3fv(const std::string& str, const glm::vec3& vec3Value);
-	bool setUniformMatrix4fv(const std::string& str, const glm::mat4x4& matValue);
-	bool setUniformBuffer(const std::string& str, const void* data, size_t uSize);
-	bool useTexture(const std::string& str, uint16_t uLocation);
+
+	void init(const char* cfilepath);
+	unsigned int GetHandle();
+	ShaderType GetShaderType();
+
+public:
+	virtual void Init() {};
+	virtual void Release();
+	virtual const std::string& GetName() const;
+	virtual uint32_t GetSize() const;
+	static  ResourceType GetType();
 private:
-	bool _CreateUniformBuffer(const std::string& name,size_t uSize);
+	void _CompileShader(const char* cfilepath);
+
 };

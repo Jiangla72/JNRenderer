@@ -1,19 +1,15 @@
 #include "Shader.h"
 #include "Base/Input.h"
+#include "Util/StringUtil.h"
 #include "Base/LogSystem.h"
-#include "Triangle.h"
-#include "Camera.h"
-#include "Model.h"
-#include "Mesh.h"
 #include "Scene/Scene.h"
 #include <GLFW/glfw3.h>
 #include <iostream>
-#include <array>
 #include <algorithm>
 #include <fstream>
 #include <sstream>
-Shader::Shader(const char* vsfilepath, const char* fsfilepath)
-	:vertexFilePath(vsfilepath), fragmentFilePath(fsfilepath)
+
+Shader::Shader()
 {
 }
 
@@ -21,154 +17,117 @@ Shader::~Shader()
 {
 }
 
-void Shader::init()
+void Shader::init(const char* cfilepath)
 {
-	int success;
-	char infoLog[512];
-
-	CompileShader();
-	shaderProgram = glCreateProgram();
-	glAttachShader(shaderProgram, vertexShader);
-	glAttachShader(shaderProgram, fragmentShader);
-	glLinkProgram(shaderProgram);
-
-	glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
-	if (!success) {
-		glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-		JNLOGERROR("ERROR::SHADER::LINK::COMPILATION_FAILED\n{}\n", infoLog);
+	std::string ext = StringUtil::GetFileExt(cfilepath);
+	if (ext.compare("vsh") == 0)
+	{
+		m_eType = ST_Vertex;
+	}
+	else if (ext.compare("fsh") == 0)
+	{
+		m_eType = ST_Fragment;
+	}
+	else if (ext.compare("gsh") == 0)
+	{
+		m_eType = ST_Geometry;
+	}
+	else if (ext.compare("hsh") == 0)
+	{
+		m_eType = ST_Hull;
+	}
+	else if (ext.compare("dsh") == 0)
+	{
+		m_eType = ST_Domin;
+	}
+	else if (ext.compare("csh") == 0)
+	{
+		m_eType = ST_Compute;
+	}
+	else
+	{
+		JNLOGERROR("ERROR::UNKNOWN SHADER TYPE::WITH EXT:{}\n", ext);
 	}
 
-	glDeleteShader(vertexShader);
-	glDeleteShader(fragmentShader);
+	_CompileShader(cfilepath);
 }
 
-void Shader::CompileShader()
+void Shader::_CompileShader(const char* cfilepath)
 {
 	int  success;
 	char infoLog[512];
 
-	std::ifstream vsfin(vertexFilePath);
-	std::ifstream fsfin(fragmentFilePath);
+	std::ifstream fin(cfilepath);
 
-	std::stringstream vsbuffer;
-	std::stringstream fsbuffer;
+	std::stringstream buffer;
 
-	vsbuffer << vsfin.rdbuf();
-	fsbuffer << fsfin.rdbuf();
+	buffer << fin.rdbuf();
 
-	auto tempVS = vsbuffer.str();
-	auto tempFS = fsbuffer.str();
-	const char* vertexShaderSource = tempVS.c_str();
-	const char* fragmentShaderSource = tempFS.c_str();
-
-	vertexShader = glCreateShader(GL_VERTEX_SHADER);
-	glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
-	glCompileShader(vertexShader);
-	glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
+	auto tempS = buffer.str();
+	const char* ShaderSource = tempS.c_str();
+	GLuint uShaderType = 0;
+	switch (m_eType)
+	{
+	case ST_Vertex:
+		uShaderType = GL_VERTEX_SHADER;
+		break;
+	case ST_Fragment:
+		uShaderType = GL_FRAGMENT_SHADER;
+		break;
+	case ST_Geometry:
+		uShaderType = GL_GEOMETRY_SHADER;
+		break;
+	case ST_Hull:
+		uShaderType = GL_TESS_CONTROL_SHADER;
+		break;
+	case ST_Domin:
+		uShaderType = GL_TESS_EVALUATION_SHADER;
+		break;
+	case ST_Compute:
+		uShaderType = GL_COMPUTE_SHADER;
+		break;
+	default:
+		JNLOGERROR("ERROR::UNKNOWN SHADER TYPE\n");
+		break;
+	}
+	m_uShaderHandle = glCreateShader(uShaderType);
+	glShaderSource(m_uShaderHandle, 1, &ShaderSource, NULL);
+	glCompileShader(m_uShaderHandle);
+	glGetShaderiv(m_uShaderHandle, GL_COMPILE_STATUS, &success);
 	if (!success)
 	{
-		glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
-		JNLOGERROR("ERROR::SHADER::VERTEX::COMPILATION_FAILED\n{}\n", infoLog);
-	}
-
-	fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-	glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
-	glCompileShader(fragmentShader);
-	glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
-	if (!success)
-	{
-		glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
-		JNLOGERROR("ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n{}\n", infoLog);
+		glGetShaderInfoLog(m_uShaderHandle, 512, NULL, infoLog);
+		JNLOGERROR("ERROR::SHADER::TYPE:{}::COMPILATION_FAILED\n{}\n", uShaderType, infoLog);
 	}
 }
 
-void Shader::use()
+unsigned int Shader::GetHandle()
 {
-	glUseProgram(shaderProgram);
+	return m_uShaderHandle;
 }
 
-bool Shader::setUniform3fv(const std::string& str, const glm::vec3& vec3Value)
-{
-	int nIndex = glGetUniformLocation(getProgram(), str.c_str());
-	if (nIndex == -1)
-	{
-		JNLOGERROR("找不到 {} Uniform3fv!\n", str);
-		return false;
-	}
 
-	glUniform3fv(nIndex, 1, glm::value_ptr(vec3Value));
-	return true;
+ShaderType Shader::GetShaderType()
+{
+	return m_eType;
 }
 
-bool Shader::setUniformMatrix4fv(const std::string& str, const glm::mat4x4& matValue)
+void Shader::Release()
 {
-	int nIndex = glGetUniformLocation(getProgram(), str.c_str());
-	if (nIndex == -1)
-	{
-		JNLOGERROR("找不到 {} UniformMatrix4fv!\n", str);
-		return false;
-	}
-	glUniformMatrix4fv(nIndex, 1, GL_FALSE, glm::value_ptr(matValue));
-	return true;
 }
 
-bool Shader::setUniformBuffer(const std::string& str, const void* data, size_t uSize)
+const std::string& Shader::GetName() const
 {
-	UniformBufferData bufferData;
-	auto it = mapStrtoUbo.find(str);
-	if (it == mapStrtoUbo.end())
-	{
-		if (!_CreateUniformBuffer(str, uSize))
-		{
-			JNLOGERROR("找不到 {} UniformBuffer!\n", str);
-			return false;
-		}
-	}
-	bufferData = mapStrtoUbo[str];
-
-	glBindBuffer(GL_UNIFORM_BUFFER, bufferData.uUboIndex);
-	glBufferData(GL_UNIFORM_BUFFER, uSize, data, GL_STATIC_DRAW);
-	glBindBuffer(GL_UNIFORM_BUFFER, 0);
-	GLuint uIndex = glGetUniformBlockIndex(getProgram(), str.c_str());
-	if (uIndex == GL_INVALID_INDEX)
-	{
-		JNLOGERROR("shader中找不到 {} UniformBuffer!\n", str);
-		return false;
-	}
-	glUniformBlockBinding(getProgram(), uIndex, bufferData.uBinding);
-	glBindBufferBase(GL_UNIFORM_BUFFER, bufferData.uBinding, bufferData.uUboIndex);
-
-	return true;
+	return "";
 }
 
-bool Shader::useTexture(const std::string& str, uint16_t uLocation)
+uint32_t Shader::GetSize() const
 {
-	glUniform1i(glGetUniformLocation(shaderProgram, str.c_str()), uLocation); // 手动设置
-	return true;
+	return 0;
 }
 
-bool Shader::_CreateUniformBuffer(const std::string& name, size_t uSize)
+ResourceType Shader::GetType()
 {
-	auto it = mapStrtoUbo.find(name);
-	if (it != mapStrtoUbo.end())
-	{
-		JNLOGERROR("{} UnifomrBuffer已存在!\n", name);
-		return false;
-	}
-	UniformBufferData uniformBuffer;
-	GLuint ubo;
-	glGenBuffers(1, &ubo);
-	glBindBuffer(GL_UNIFORM_BUFFER, ubo);
-	glBufferData(GL_UNIFORM_BUFFER, uSize, NULL, GL_STATIC_DRAW);
-	glBindBuffer(GL_UNIFORM_BUFFER, 0);
-	uniformBuffer.uBinding = nBinding;
-	nBinding++;
-
-	uniformBuffer.uUboIndex = ubo;
-	uniformBuffer.uSize = uSize;
-	mapStrtoUbo.emplace(name, uniformBuffer);
-	//mapStrtoUbo.insert({ name, uniformBuffer });
-	//mapStrtoUbo.insert(std::pair<std::string, UniformBufferData>(name, uniformBuffer));
-	return true;
+	return ResourceType::eShader;
 }
 

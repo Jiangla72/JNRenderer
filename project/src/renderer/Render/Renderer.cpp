@@ -5,7 +5,7 @@
 #include "Camera.h"
 #include "Model.h"
 #include "Mesh.h"
-#include "Shader.h"
+#include "ShaderModule.h"
 #include "Light.h"
 #include "Texture.h"
 #include "Scene/Scene.h"
@@ -24,8 +24,7 @@ Renderer::~Renderer()
 
 void Renderer::init()
 {
-	m_pShader = new Shader("D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.vsh", "D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.fsh");
-	m_pShader->init();
+	m_pShaderModule = ShaderModule::GetShaderModule("D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.vsh", "D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.fsh");
 	texture1 = new Texture("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
 
 }
@@ -35,7 +34,7 @@ void Renderer::render(std::shared_ptr<Scene> scene)
 	
 	//frame = frame > 360 ? 1 : frame + 1.f;s
 	
-	 m_pShader->use();
+	m_pShaderModule->use();
 	 const std::vector<std::shared_ptr<Model>>& models = scene->getModels();
 	 const std::vector<Light*>& lights = scene->getLights();
 	glEnable(GL_DEPTH_TEST);
@@ -45,11 +44,11 @@ void Renderer::render(std::shared_ptr<Scene> scene)
 	Camera* camera= scene->getCamera();
 	CameraData cameraData = camera->getCameraData();
 
-	m_pShader->setUniformMatrix4fv("mvpMatrix", cameraData.matViewProject);
-	m_pShader->setUniform3fv("cameraPos", cameraData.pos);
+	m_pShaderModule->setUniformMatrix4fv("mvpMatrix", cameraData.matViewProject);
+	m_pShaderModule->setUniform3fv("cameraPos", cameraData.pos);
 
 	texture1->BindTexture(17);
-	m_pShader->useTexture("texture1", 17);
+	m_pShaderModule->useTexture("texture1", 17);
 	struct LightInfoForGPU
 	{
 		Light light[8];
@@ -63,7 +62,7 @@ void Renderer::render(std::shared_ptr<Scene> scene)
 		if (lightInfo.nCount > 7)
 			break;
 	}
-	m_pShader->setUniformBuffer("LightUBO", (void*)&lightInfo, sizeof(LightInfoForGPU));
+	m_pShaderModule->setUniformBuffer("LightUBO", (void*)&lightInfo, sizeof(LightInfoForGPU));
 	for(auto model : models)
 	{
 		model->render();
