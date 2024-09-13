@@ -25,7 +25,7 @@ Renderer::~Renderer()
 void Renderer::init()
 {
 	m_pShaderModule = ShaderModule::GetShaderModule("D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.vsh", "D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.fsh");
-	texture1 = new Texture("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
+	texture1 = TextureHelper::CreateTextureFromFile("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
 
 }
 

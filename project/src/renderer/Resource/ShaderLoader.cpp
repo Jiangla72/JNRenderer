@@ -16,5 +16,5 @@ bool ShaderLoader::Load(const std::string& resPath, std::shared_ptr<IResource> p
 		return false;
 	}
 	shader->init(resPath.c_str());
-	return false;
+	return true;
 }

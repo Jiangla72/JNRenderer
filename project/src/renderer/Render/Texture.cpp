@@ -1,10 +1,11 @@
 #include "Texture.h"
 #include "Base/LogSystem.h"
+#include "Resource/ResourceManager.h"
 #include "stb_image.h"
 
 #include <glad/glad.h>
 #include <iostream>
-Texture::Texture(uint16_t width,uint16_t height, ColorChanel enmColorChanel)
+Texture::Texture(uint16_t width,uint16_t height, JNFormat enmColorChanel)
 	:width(width),height(height)
 {
 	glGenTextures(1, &texture);
@@ -24,7 +25,20 @@ Texture::Texture(uint16_t width,uint16_t height, ColorChanel enmColorChanel)
 
 Texture::Texture(const std::string& texturePath)
 {
-	unsigned char* data = stbi_load(texturePath.c_str(), &width, &height, &nrChannels, 0);
+	Init(texturePath);
+}
+
+Texture::Texture()
+{
+}
+
+Texture::~Texture()
+{
+}
+
+void Texture::Init(const std::string& cPath)
+{
+	unsigned char* data = stbi_load(cPath.c_str(), &width, &height, &nrChannels, 0);
 	glGenTextures(1, &texture);
 	glBindTexture(GL_TEXTURE_2D, texture);
 	// 为当前绑定的纹理对象设置环绕、过滤方式
@@ -58,19 +72,15 @@ Texture::Texture(const std::string& texturePath)
 
 }
 
-Texture::~Texture()
-{
-}
-
-int Texture::ConvertEnmColorChanelToGLFormat(ColorChanel enmType)
+int Texture::ConvertEnmColorChanelToGLFormat(JNFormat enmType)
 {
 	GLint format = 0;
 	switch (enmType)
 	{
-	case CC_RGB:
+	case JNF_RGB:
 		format = GL_RGB;
 		break;
-	case CC_RGBA:
+	case JNF_RGBA:
 		format = GL_RGBA;
 		break;
 	default:
@@ -95,3 +105,38 @@ bool Texture::UnBindTexture(uint16_t uLocation)
 
 	return true;
 }
+
+void Texture::Init()
+{
+}
+
+void Texture::Release()
+{
+}
+
+const std::string& Texture::GetName() const
+{
+	// TODO: 在此处插入 return 语句
+	return "";
+}
+
+uint32_t Texture::GetSize() const
+{
+	return 0;
+}
+
+namespace TextureHelper {
+
+	std::shared_ptr<Texture> CreateTexture(const TextureDesc& sDesc)
+	{
+		std::shared_ptr<Texture> pTexture = std::make_shared<Texture>(sDesc.width, sDesc.height, sDesc.format);
+		return pTexture;
+	}
+
+	std::shared_ptr<Texture> CreateTextureFromFile(const std::string& strFile)
+	{
+		std::shared_ptr<Texture> pTexture = ResourceManager::GetResource<Texture>(strFile);
+		return pTexture;
+	}
+
+};

@@ -16,7 +16,7 @@ private:
 	unsigned int VBO, VAO;
 	std::shared_ptr<ShaderModule> m_pShaderModule = nullptr;
 	float frame = 0;
-	Texture* texture1 = nullptr;
+	std::shared_ptr<Texture> texture1 = nullptr;
 	//struct Light
 	//{
 	//	glm::vec3 position;

@@ -13,10 +13,12 @@ project "editor"
 		"**.hpp",
 
 		"**.lua",
+
 	}
 	includedirs
     {
        "../renderer/",
+	   thirdparty.."/imgui/",
     }
 
 	filter "system:windows"
