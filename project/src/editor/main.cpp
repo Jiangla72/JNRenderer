@@ -1,9 +1,11 @@
 #include "engine.h"
 #include "imgui.h"
-int main()
+
+int main(int argc, char** argv)
 {
-	ImGui::ShowDemoWindow();
-	Engine::getEngine()->start();
+	//ImGui::ShowDemoWindow();
+	auto engine = CreateEngine();
+	engine->start();
 
 	return 1;
 }

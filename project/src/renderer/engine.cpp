@@ -8,7 +8,7 @@
 #include "Render/Light.h"
 #include "Scene/Scene.h"
 #include "Resource/ResourceManager.h"
-std::shared_ptr <Engine> Engine::engine = nullptr;
+std::shared_ptr <Engine> Engine::Instance = nullptr;
 Engine::Engine()
 {
 }
@@ -17,13 +17,18 @@ Engine::~Engine()
 {
 }
 
-std::shared_ptr <Engine> Engine::getEngine()
+std::shared_ptr <Engine> Engine::GetEngine()
 {
-	if (engine==nullptr)
-	{
-		engine = std::make_shared<Engine>();
-	}
-	return engine;
+	return Instance;
+}
+
+void Engine::RegisterSystem()
+{
+}
+
+Window& Engine::GetWindow()
+{
+	return *m_Window;
 }
 
 void Engine::start()
@@ -33,8 +38,8 @@ void Engine::start()
 	ResourceManager::Init();
 	JNLOGINFO("ResManager Inited.");
 
-	window = std::make_unique<Window>();
-	window->init();
+	m_Window = std::make_unique<Window>();
+	m_Window->init();
 
 
 	std::string pathModel = "D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj";
@@ -64,7 +69,7 @@ void Engine::start()
 	scene->Add(light);
 	scene->Add(light1);
 	scene->Add(light2);
-	while (!window->ShouldClose())
+	while (!m_Window->ShouldClose())
 	{
 		_update();
 
@@ -79,10 +84,9 @@ void Engine::start()
 	
 		_present();
 	}
-	window->release();
+	m_Window->release();
 
 }
-
 
 void Engine::_render(){
 	renderer->render(scene);
@@ -90,11 +94,11 @@ void Engine::_render(){
 
 void Engine::_update()
 {
-	window->update();
+	m_Window->update();
 	scene->update();
 }
 
 void Engine::_present()
 {
-	window->present();
+	m_Window->present();
 }
