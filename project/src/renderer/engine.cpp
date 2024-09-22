@@ -1,34 +1,26 @@
 #include "engine.h"
-#include "Base/LogSystem.h"
-
+#include "Base/Timer.h"
 #include "Window/window.h"
 #include "Render/Model.h"
 #include "Render/SoftRenderer.h"
-#include "Render/Renderer.h"
+#include "Render/RenderSystem.h"
 #include "Render/Light.h"
-#include "Scene/Scene.h"
+#include "Scene/SceneManager.h"
 #include "Resource/ResourceManager.h"
 std::shared_ptr <Engine> Engine::Instance = nullptr;
 Engine::Engine()
 {
+	Instance = std::shared_ptr <Engine>(this);
 }
 
 Engine::~Engine()
 {
+	
 }
 
 std::shared_ptr <Engine> Engine::GetEngine()
 {
 	return Instance;
-}
-
-void Engine::RegisterSystem()
-{
-}
-
-Window& Engine::GetWindow()
-{
-	return *m_Window;
 }
 
 void Engine::start()
@@ -37,40 +29,16 @@ void Engine::start()
 	JNLOGINFO("LogSystem Inited.");
 	ResourceManager::Init();
 	JNLOGINFO("ResManager Inited.");
+	SceneManager::Init();
+	JNLOGINFO("SceneManager Inited.");
 
-	m_Window = std::make_unique<Window>();
-	m_Window->init();
+	RegisterSystem<Window>();
+	RegisterSystem<RenderSystem>();
+	_init();
 
-
-	std::string pathModel = "D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj";
-	std::shared_ptr<Model> bunny = ResourceManager::GetResource<Model>(pathModel);
-	JNLOGINFO("Create Model at path : {} , with mesh count : {}", pathModel,bunny->m_vecMesh.size());
-
-	//renderer = std::make_shared<SoftRenderer>();
-	renderer = std::make_shared<Renderer>();
-	scene = std::make_shared <Scene>();
-	renderer->init();
-	scene->init();
-	scene->Add(bunny);
-	Light* light = new Light();
-	light->position = { 20, 0, 50 ,0};
-	light->intensity = { 500, 500, 500 ,0 };
-	light->color = { 0.2, 0, 0.21 ,0 };
-	Light* light1 = new Light();
-	light1->position = { 0, 0, 50 ,0 };
-	light1->intensity = { 500, 500, 500 ,0 };
-	light1->color = { 0.53, 0.12, 0.8 ,0 };
-
-	Light* light2 = new Light();
-	light2->position = { 20, 0, 50 ,0 };
-	light2->intensity = { 500, 500, 500 ,0 };
-	light2->color = { 0.6, 1, 0.6 ,0 };
-
-	scene->Add(light);
-	scene->Add(light1);
-	scene->Add(light2);
-	while (!m_Window->ShouldClose())
+	while (!GetSystem<Window>()->ShouldClose())
 	{
+		Timer::Tick();
 		_update();
 
 
@@ -78,27 +46,48 @@ void Engine::start()
 		
 		_render();
 
-
+		_onGui();
 
 		
 	
 		_present();
 	}
-	m_Window->release();
+	_uninit();
+}
+
+void Engine::_init()
+{
+	for (auto system : m_vecSystems)
+		system->OnInit();
+}
+
+void Engine::_uninit()
+{
+	for (auto system : m_vecSystems)
+		system->OnUninit();
 
 }
 
 void Engine::_render(){
-	renderer->render(scene);
+	for (auto system : m_vecSystems)
+		system->OnRender();
 };
 
 void Engine::_update()
 {
-	m_Window->update();
-	scene->update();
+	for (auto system : m_vecSystems)
+		system->OnUpdate();
+}
+
+void Engine::_onGui()
+{
+	for (auto system : m_vecSystems)
+		system->OnGui();
 }
 
 void Engine::_present()
 {
-	m_Window->present();
+	for (auto system : m_vecSystems)
+		system->BeforePresent();
+	GetSystem<Window>()->Present();
 }

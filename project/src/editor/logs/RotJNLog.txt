@@ -5364,3 +5364,440 @@
 [2024-09-14 00:08:24.526] [JNLog] [info] Mosue right button clicked!
 [2024-09-14 00:08:24.976] [JNLog] [info] Mosue right button clicked!
 [2024-09-14 00:08:25.460] [JNLog] [info] Mosue right button clicked!
+[2024-09-19 23:43:36.248] [JNLog] [info] LogSystem Inited.
+[2024-09-19 23:43:36.248] [JNLog] [info] ResManager Inited.
+[2024-09-19 23:43:36.447] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-19 23:43:40.965] [JNLog] [info] Mosue left button clicked!
+[2024-09-19 23:43:41.771] [JNLog] [info] Mosue left button clicked!
+[2024-09-19 23:43:43.104] [JNLog] [info] Mosue right button clicked!
+[2024-09-19 23:43:44.620] [JNLog] [info] Mosue right button clicked!
+[2024-09-19 23:43:46.037] [JNLog] [info] Mosue right button clicked!
+[2024-09-19 23:44:39.857] [JNLog] [info] LogSystem Inited.
+[2024-09-19 23:44:39.858] [JNLog] [info] ResManager Inited.
+[2024-09-19 23:44:40.037] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-21 23:06:33.883] [JNLog] [info] LogSystem Inited.
+[2024-09-21 23:06:33.885] [JNLog] [info] ResManager Inited.
+[2024-09-21 23:06:34.091] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-21 23:06:56.550] [JNLog] [info] LogSystem Inited.
+[2024-09-21 23:06:56.551] [JNLog] [info] ResManager Inited.
+[2024-09-21 23:06:56.732] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 00:18:13.408] [JNLog] [info] LogSystem Inited.
+[2024-09-22 00:18:13.409] [JNLog] [info] ResManager Inited.
+[2024-09-22 00:18:13.676] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 00:20:26.414] [JNLog] [info] LogSystem Inited.
+[2024-09-22 00:20:26.414] [JNLog] [info] ResManager Inited.
+[2024-09-22 00:20:26.614] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 00:22:58.296] [JNLog] [info] LogSystem Inited.
+[2024-09-22 00:22:58.297] [JNLog] [info] ResManager Inited.
+[2024-09-22 00:22:58.499] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 00:26:21.611] [JNLog] [info] LogSystem Inited.
+[2024-09-22 00:26:21.612] [JNLog] [info] ResManager Inited.
+[2024-09-22 00:26:21.807] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 00:30:25.679] [JNLog] [info] LogSystem Inited.
+[2024-09-22 00:30:25.679] [JNLog] [info] ResManager Inited.
+[2024-09-22 00:31:07.265] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 00:31:42.600] [JNLog] [info] LogSystem Inited.
+[2024-09-22 00:31:42.601] [JNLog] [info] ResManager Inited.
+[2024-09-22 00:31:47.267] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 00:39:09.449] [JNLog] [info] LogSystem Inited.
+[2024-09-22 00:39:09.449] [JNLog] [info] ResManager Inited.
+[2024-09-22 00:39:11.948] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 00:39:14.415] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:39:53.917] [JNLog] [info] LogSystem Inited.
+[2024-09-22 00:39:53.917] [JNLog] [info] ResManager Inited.
+[2024-09-22 00:39:55.555] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 00:40:00.313] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:03.429] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:05.229] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:06.863] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:07.663] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:08.480] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:08.762] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:13.062] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:14.512] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:18.045] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:19.479] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:22.762] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:23.628] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:24.295] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:25.145] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:27.345] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:40:27.845] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:44:31.431] [JNLog] [info] LogSystem Inited.
+[2024-09-22 00:44:31.432] [JNLog] [info] ResManager Inited.
+[2024-09-22 00:44:31.608] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 00:45:04.665] [JNLog] [info] LogSystem Inited.
+[2024-09-22 00:45:04.665] [JNLog] [info] ResManager Inited.
+[2024-09-22 00:45:04.862] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 00:45:06.130] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:46:04.999] [JNLog] [info] LogSystem Inited.
+[2024-09-22 00:46:05.000] [JNLog] [info] ResManager Inited.
+[2024-09-22 00:46:05.195] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 00:46:11.128] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:46:13.028] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:48:17.999] [JNLog] [info] LogSystem Inited.
+[2024-09-22 00:48:18.000] [JNLog] [info] ResManager Inited.
+[2024-09-22 00:48:18.203] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 00:48:20.904] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:48:21.387] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 00:48:23.387] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:48:27.687] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:48:31.853] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:48:43.820] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:48:44.570] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 00:48:46.036] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:48:48.669] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 00:48:49.486] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 00:48:56.019] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 00:48:57.020] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 00:48:59.402] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:49:00.335] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:49:00.685] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 00:49:01.685] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 15:46:14.210] [JNLog] [info] LogSystem Inited.
+[2024-09-22 15:46:14.210] [JNLog] [info] ResManager Inited.
+[2024-09-22 15:46:14.440] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 15:46:15.879] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 15:46:16.929] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 15:47:57.726] [JNLog] [info] LogSystem Inited.
+[2024-09-22 15:47:57.727] [JNLog] [info] ResManager Inited.
+[2024-09-22 15:47:57.922] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 15:48:02.540] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 15:48:05.357] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 15:48:07.540] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 15:52:02.813] [JNLog] [info] LogSystem Inited.
+[2024-09-22 15:52:02.813] [JNLog] [info] ResManager Inited.
+[2024-09-22 15:52:03.012] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 15:52:29.594] [JNLog] [info] LogSystem Inited.
+[2024-09-22 15:52:29.594] [JNLog] [info] ResManager Inited.
+[2024-09-22 15:52:29.825] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 15:52:30.860] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 15:52:31.710] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 15:53:20.463] [JNLog] [info] LogSystem Inited.
+[2024-09-22 15:53:20.464] [JNLog] [info] ResManager Inited.
+[2024-09-22 15:53:20.664] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 15:53:21.774] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 15:53:23.207] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 20:11:15.936] [JNLog] [info] LogSystem Inited.
+[2024-09-22 20:11:15.937] [JNLog] [info] ResManager Inited.
+[2024-09-22 20:12:31.411] [JNLog] [info] LogSystem Inited.
+[2024-09-22 20:12:31.411] [JNLog] [info] ResManager Inited.
+[2024-09-22 20:14:32.606] [JNLog] [info] LogSystem Inited.
+[2024-09-22 20:14:32.606] [JNLog] [info] ResManager Inited.
+[2024-09-22 20:15:56.281] [JNLog] [info] LogSystem Inited.
+[2024-09-22 20:15:56.281] [JNLog] [info] ResManager Inited.
+[2024-09-22 20:15:56.529] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 20:16:39.501] [JNLog] [info] LogSystem Inited.
+[2024-09-22 20:16:39.501] [JNLog] [info] ResManager Inited.
+[2024-09-22 20:16:39.718] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 20:21:48.423] [JNLog] [info] LogSystem Inited.
+[2024-09-22 20:21:48.424] [JNLog] [info] ResManager Inited.
+[2024-09-22 20:21:48.654] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 20:25:41.052] [JNLog] [info] LogSystem Inited.
+[2024-09-22 20:25:41.052] [JNLog] [info] ResManager Inited.
+[2024-09-22 20:25:41.271] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 20:25:42.699] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 21:28:58.090] [JNLog] [info] LogSystem Inited.
+[2024-09-22 21:28:58.090] [JNLog] [info] ResManager Inited.
+[2024-09-22 21:28:58.090] [JNLog] [info] SceneManager Inited.
+[2024-09-22 21:28:58.323] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 21:28:58.323] [JNLog] [error] 重复添加Scene : 1
+[2024-09-22 21:28:58.324] [JNLog] [error] Scene不存在 : 1
+[2024-09-22 21:30:43.665] [JNLog] [info] LogSystem Inited.
+[2024-09-22 21:30:43.665] [JNLog] [info] ResManager Inited.
+[2024-09-22 21:30:43.666] [JNLog] [info] SceneManager Inited.
+[2024-09-22 21:30:43.881] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 21:30:43.883] [JNLog] [error] 重复添加Scene : 1
+[2024-09-22 21:30:46.658] [JNLog] [error] Scene不存在 : 1
+[2024-09-22 21:31:13.593] [JNLog] [info] LogSystem Inited.
+[2024-09-22 21:31:13.593] [JNLog] [info] ResManager Inited.
+[2024-09-22 21:31:13.594] [JNLog] [info] SceneManager Inited.
+[2024-09-22 21:31:13.816] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 21:31:32.812] [JNLog] [info] LogSystem Inited.
+[2024-09-22 21:31:32.812] [JNLog] [info] ResManager Inited.
+[2024-09-22 21:31:32.812] [JNLog] [info] SceneManager Inited.
+[2024-09-22 21:31:33.044] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 21:31:38.747] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 21:31:41.297] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 21:31:43.347] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 21:31:43.647] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 21:31:43.881] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 21:31:44.297] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 21:57:32.770] [JNLog] [info] LogSystem Inited.
+[2024-09-22 21:57:32.771] [JNLog] [info] ResManager Inited.
+[2024-09-22 21:57:32.771] [JNLog] [info] SceneManager Inited.
+[2024-09-22 21:57:33.009] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 21:57:35.402] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 21:57:42.735] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 21:57:43.484] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 21:57:44.285] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 21:59:23.353] [JNLog] [info] LogSystem Inited.
+[2024-09-22 21:59:23.353] [JNLog] [info] ResManager Inited.
+[2024-09-22 21:59:23.353] [JNLog] [info] SceneManager Inited.
+[2024-09-22 21:59:23.561] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:07:48.194] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:07:48.195] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:07:48.195] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:07:48.407] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:07:55.137] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 22:07:56.671] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 22:07:58.104] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:07:59.754] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 22:08:00.504] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:08:01.287] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:08:02.453] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:08:03.038] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:08:05.653] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:08:08.120] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:08:08.720] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:08:13.420] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 22:08:14.386] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 22:11:22.411] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:11:22.411] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:11:22.411] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:11:22.611] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:11:23.710] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:11:33.452] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:11:33.452] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:11:33.452] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:11:33.658] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:13:29.078] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:13:29.079] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:13:29.079] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:13:29.292] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:15:47.907] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:15:47.907] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:15:47.908] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:15:48.113] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:17:22.759] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:17:22.759] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:17:22.760] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:17:22.972] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:18:52.514] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:18:52.514] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:18:52.514] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:18:52.741] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:18:53.454] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 22:29:49.126] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:29:49.126] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:29:49.126] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:30:32.375] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:30:32.375] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:30:32.375] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:34:45.679] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:34:45.680] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:34:45.680] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:34:45.883] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:34:56.656] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:34:56.656] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:34:56.656] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:34:56.877] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:34:57.672] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:14.954] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:15.904] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:16.637] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:16.904] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:17.221] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:17.720] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:18.070] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:18.321] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:18.670] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:19.054] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:19.354] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:19.654] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:19.904] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:20.137] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:20.353] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:20.570] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:20.753] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:20.921] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:21.120] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:21.304] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:21.470] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:21.704] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:22.153] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:22.853] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:23.253] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:23.520] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:35:24.636] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 22:35:24.820] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 22:40:11.454] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:40:11.455] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:40:11.456] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:40:11.760] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:42:46.280] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:42:46.281] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:42:46.281] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:42:46.512] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:43:18.999] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:43:19.000] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:43:19.000] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:43:19.254] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:43:20.345] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 22:43:21.096] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 22:43:21.262] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 22:44:12.835] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:44:12.835] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:44:12.835] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:44:13.073] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:44:54.734] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:44:54.734] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:44:54.734] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:44:54.958] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:45:26.090] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:45:26.090] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:45:26.090] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:45:26.295] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:46:47.558] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:46:47.559] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:46:47.559] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:46:47.764] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:48:59.678] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:48:59.679] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:48:59.679] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:48:59.899] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:49:05.778] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 22:51:04.475] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:51:04.476] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:51:04.476] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:51:04.696] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:51:34.346] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:51:34.347] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:51:34.347] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:51:34.561] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 22:52:35.116] [JNLog] [info] LogSystem Inited.
+[2024-09-22 22:52:35.116] [JNLog] [info] ResManager Inited.
+[2024-09-22 22:52:35.116] [JNLog] [info] SceneManager Inited.
+[2024-09-22 22:52:35.350] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:26:46.846] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:26:46.847] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:26:46.847] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:26:47.110] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:28:54.198] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:28:54.198] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:28:54.199] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:28:54.414] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:29:03.382] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:29:03.382] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:29:03.382] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:29:03.590] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:30:09.703] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:30:09.703] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:30:09.703] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:30:09.934] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:31:42.553] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:31:42.553] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:31:42.553] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:31:42.776] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:32:36.140] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:32:36.141] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:32:36.141] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:32:36.349] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:34:29.734] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:34:29.735] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:34:29.735] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:34:29.948] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:35:04.451] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:35:04.451] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:35:04.451] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:35:04.669] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:37:14.652] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:37:14.652] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:37:14.653] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:37:14.876] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:37:57.564] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:37:57.565] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:37:57.565] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:37:57.793] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:46:52.094] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:46:52.095] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:46:52.095] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:46:52.334] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:46:55.235] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:46:56.518] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:47:06.617] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:47:07.818] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:47:20.250] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:47:27.666] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:47:42.932] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:47:45.082] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:47:45.999] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:47:47.949] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:47:49.866] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:47:51.182] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:48:31.637] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:48:31.637] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:48:31.637] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:48:31.879] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:48:36.996] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:48:53.495] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:49:15.828] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:49:18.461] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:49:18.894] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:49:20.694] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:49:23.395] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:49:24.294] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:49:36.576] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:49:46.443] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:49:48.176] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:49:49.476] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:49:51.243] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:49:54.842] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:49:57.009] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:50:07.141] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:50:11.475] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:50:13.142] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:50:13.891] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:50:14.425] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:50:14.808] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:50:15.658] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:50:23.607] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:50:24.907] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:50:25.707] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:50:32.374] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:50:35.940] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:51:19.116] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:51:19.117] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:51:19.117] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:51:19.346] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:51:22.788] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:51:23.471] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:51:30.154] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:52:08.152] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:52:16.719] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:52:17.352] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:52:18.002] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:52:18.502] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:52:18.785] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:52:20.068] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:52:21.535] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:52:22.552] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:52:23.518] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:52:24.418] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:52:25.985] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:52:29.218] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:52:29.634] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:52:30.318] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:52:32.134] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:52:32.884] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:52:34.867] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:52:40.034] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:52:40.884] [JNLog] [info] Mosue right button clicked!
+[2024-09-22 23:52:46.250] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:52:46.700] [JNLog] [info] Mosue left button clicked!
+[2024-09-22 23:53:46.542] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:53:49.006] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:53:49.007] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:53:49.206] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:54:32.714] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:54:32.714] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:54:32.714] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:54:32.938] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:56:21.984] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:56:21.984] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:56:21.984] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:56:22.213] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-09-22 23:58:17.378] [JNLog] [info] LogSystem Inited.
+[2024-09-22 23:58:17.378] [JNLog] [info] ResManager Inited.
+[2024-09-22 23:58:17.378] [JNLog] [info] SceneManager Inited.
+[2024-09-22 23:58:17.593] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1

@@ -33,6 +33,7 @@ public:
 	~Texture();
 	void Init(const std::string& cPath);
 
+	unsigned int GetHandle() { return texture; };
 	int ConvertEnmColorChanelToGLFormat(JNFormat enmType);
 	bool BindTexture(uint16_t uLocation);
 	bool UnBindTexture(uint16_t uLocation);

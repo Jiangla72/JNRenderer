@@ -1,35 +1,35 @@
-#include "Renderer.h"
+#include "DefaltForwardPass.h"
 #include "Base/Input.h"
-
-#include "Triangle.h"
-#include "Camera.h"
-#include "Model.h"
-#include "Mesh.h"
-#include "ShaderModule.h"
-#include "Light.h"
-#include "Texture.h"
+#include "Render/RenderSystem.h"
+#include "Render/Triangle.h"
+#include "Render/Camera.h"
+#include "Render/Model.h"
+#include "Render/Mesh.h"
+#include "Render/ShaderModule.h"
+#include "Render/Light.h"
+#include "Render/Texture.h"
 #include "Scene/Scene.h"
 #include <array>
 #include <algorithm>
 #include <GLFW/glfw3.h>
 
-Renderer::Renderer()
+DefaltForwardPass::DefaltForwardPass()
 {
 }
 
-Renderer::~Renderer()
+DefaltForwardPass::~DefaltForwardPass()
 {
    
 }
 
-void Renderer::init()
+void DefaltForwardPass::Init()
 {
 	m_pShaderModule = ShaderModule::GetShaderModule("D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.vsh", "D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.fsh");
 	texture1 = TextureHelper::CreateTextureFromFile("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
 
 }
 
-void Renderer::render(std::shared_ptr<Scene> scene)
+void DefaltForwardPass::_RenderScene(std::shared_ptr<Scene> scene)
 {
 	
 	//frame = frame > 360 ? 1 : frame + 1.f;s
@@ -67,5 +67,24 @@ void Renderer::render(std::shared_ptr<Scene> scene)
 	{
 		model->render();
 	}
+}
+
+void DefaltForwardPass::Update()
+{
+}
+
+void DefaltForwardPass::Render()
+{
+	RenderContext context = RenderSystem::GetRenderContext();
+	unsigned int fbo = RenderSystem::GetMainFBO();
+	glBindFramebuffer(GL_FRAMEBUFFER, fbo);
+
+	_RenderScene(context.scene);
+	glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
+}
+
+void DefaltForwardPass::Release()
+{
 }
 

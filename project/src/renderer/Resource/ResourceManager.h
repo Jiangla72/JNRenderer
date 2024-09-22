@@ -13,7 +13,7 @@
 #include "ModelLoader.h"
 #include "TextureLoader.h"
 #include "ShaderLoader.h"
-class ResourceManager
+class JNAPI ResourceManager
 {
 private:
 	std::unordered_map<size_t, std::shared_ptr<IResource>> m_mapPathToRes;

@@ -39,13 +39,13 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 	if (action == GLFW_PRESS) switch (button)
 	{
 	case GLFW_MOUSE_BUTTON_LEFT:
-		JNLOGINFO("Mosue left button clicked!");
+		//JNLOGINFO("Mosue left button clicked!");
 		break;
 	case GLFW_MOUSE_BUTTON_MIDDLE:
-		JNLOGINFO("Mosue middle button clicked!");
+		//JNLOGINFO("Mosue middle button clicked!");
 		break;
 	case GLFW_MOUSE_BUTTON_RIGHT:
-		JNLOGINFO("Mosue right button clicked!");
+		//JNLOGINFO("Mosue right button clicked!");
 		break;
 	default:
 		break;
@@ -77,13 +77,13 @@ Window::~Window()
 
 }
 
-void Window::init()
+void Window::OnInit()
 {
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	m_pWindow =  glfwCreateWindow(600, 600, "JNRenderer", nullptr, nullptr);
+	m_pWindow = glfwCreateWindow(600, 600, "JNRenderer", nullptr, nullptr);
 	if (m_pWindow == nullptr)
 	{
 		JNLOGERROR("Error : failed create window!");
@@ -102,32 +102,44 @@ void Window::init()
 	glfwSetMouseButtonCallback(m_pWindow, mouse_button_callback);
 	glfwSetCursorPosCallback(m_pWindow, cursor_position_callback);
 	glfwSetScrollCallback(m_pWindow, scroll_callback);
+
 }
 
-void Window::update()
-{
-	_ProcessInput(m_pWindow);
-	glfwPollEvents();
-}
-
-void Window::present()
-{
-	glfwSwapBuffers(m_pWindow);
-}
-
-void Window::release()
+void Window::OnUninit()
 {
 	glfwTerminate();
+
+}
+
+void Window::OnUpdate()
+{
+	glfwPollEvents();
+
+}
+
+void Window::OnRender()
+{
+}
+
+void Window::OnGui()
+{
+}
+
+void Window::BeforePresent()
+{
+}
+
+void Window::Present()
+{
+	glfwSwapBuffers(m_pWindow);
+	glClearColor(0.f, 0.f, 0.f, 0.f);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
 }
 
 bool Window::ShouldClose()
 {
 	return glfwWindowShouldClose(m_pWindow);
 }
-
-void Window::_ProcessInput(GLFWwindow* window)
-{
-}
-
 
 

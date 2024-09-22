@@ -1,5 +1,6 @@
 #pragma once
 #include "Base/core.h"
+#include "IPass.h"
 #include <glm/glm.hpp>
 #include <vector>
 #include <glad/glad.h>
@@ -10,24 +11,27 @@ class Scene;
 class Camera;
 class ShaderModule;
 class Texture;
-class JNAPI Renderer
+class RenderSystem;
+class JNAPI DefaltForwardPass:public IPass
 {
 private:
 	unsigned int VBO, VAO;
 	std::shared_ptr<ShaderModule> m_pShaderModule = nullptr;
 	float frame = 0;
 	std::shared_ptr<Texture> texture1 = nullptr;
-	//struct Light
-	//{
-	//	glm::vec3 position;
-	//	float padding1 = 0;
-	//	glm::vec3 intensity;
-	//	float padding2 = 0;
-	//} light;
+	RenderSystem* m_pRenderSystem = nullptr;
 public:
-	Renderer();
-	~Renderer();
+	DefaltForwardPass();
+	~DefaltForwardPass();
 
-	void init();
-	void render(std::shared_ptr<Scene> scene);
+	void Init() override;
+
+	// Í¨¹ý IPass ¼Ì³Ð
+	void Update() override;
+	void Render() override;
+	void Release() override;
+
+private:
+	void _RenderScene(std::shared_ptr<Scene> scene);
+
 };

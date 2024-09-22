@@ -5,7 +5,7 @@
 #include <glm/glm.hpp>
 class Mesh;
 class Triangle;
-class Model: public IResource
+class JNAPI Model: public IResource
 {
 public:
 	std::vector<Mesh*> m_vecMesh;

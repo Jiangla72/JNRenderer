@@ -19,6 +19,12 @@ project "editor"
     {
        "../renderer/",
 	   thirdparty.."/imgui/",
+       thirdparty.."/tiny_obj_loader",
+       thirdparty.."/glad/include",
+       thirdparty.."/glfw/include",
+       thirdparty.."/stb",
+       thirdparty.."/",
+	   thirdparty,
     }
 
 	filter "system:windows"

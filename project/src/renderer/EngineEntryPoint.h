@@ -4,8 +4,10 @@
 int main(int argc, char** argv)
 {
 	//ImGui::ShowDemoWindow();
-	auto engine = CreateEngine();
-	engine->start();
+	CreateEngine();
+	Engine::GetEngine()->start();
 
+	/*delete engine;
+	engine = nullptr;*/
 	return 1;
 }

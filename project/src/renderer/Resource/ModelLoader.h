@@ -9,7 +9,7 @@
 #include <functional>
 
 class Model;
-class ModelLoader : public ILoader
+class JNAPI ModelLoader : public ILoader
 {
 
 public:

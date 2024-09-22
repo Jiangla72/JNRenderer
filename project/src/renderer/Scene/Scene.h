@@ -11,12 +11,11 @@ class JNAPI Scene
 public:
 	int width = 640;
 	int height = 640;
+	bool m_bActived = false;
 private:
 	std::vector<std::shared_ptr<Model>> models;
 	std::vector<Light*> lights;
 	Camera* m_pCamera = nullptr;
-	float deltaTime = 0.0f;
-	float lastFrameTime = 0.0f;
 public:
 	Scene();
 	~Scene();
@@ -30,5 +29,6 @@ public:
 	const std::vector<std::shared_ptr<Model>>& getModels();
 	const std::vector<Light*>& getLights();
 	void update();
-
+	void OnActive();
+	void OnDeactive();
 };

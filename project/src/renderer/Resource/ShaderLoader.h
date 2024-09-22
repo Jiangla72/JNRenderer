@@ -1,6 +1,8 @@
 #pragma once
+#include "Base/core.h"
+
 #include "ILoader.h"
-class ShaderLoader : public ILoader
+class JNAPI ShaderLoader : public ILoader
 {
 public:
 	ShaderLoader ();

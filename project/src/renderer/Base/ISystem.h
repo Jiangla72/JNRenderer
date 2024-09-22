@@ -12,7 +12,6 @@ public:
 	virtual void OnUninit() {}
 	virtual void OnUpdate() {}
 	virtual void OnRender() {}
-	virtual void OnPresent() {}
-protected:
-	std::string m_DebugName;
+	virtual void OnGui() {}
+	virtual void BeforePresent() {}
 };
