@@ -14,7 +14,7 @@ void Editor::_init()
     bool info = RegisterSystem<ImGuiSystem>();
     Engine::_init();
 
-	std::string pathModel = "D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj";
+	std::string pathModel = "G:\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj";
 	std::shared_ptr<Model> bunny = ResourceManager::GetResource<Model>(pathModel);
 	JNLOGINFO("Create Model at path : {} , with mesh count : {}", pathModel, bunny->m_vecMesh.size());
 
@@ -42,8 +42,8 @@ void Editor::_init()
 	SceneManager::AddScene("1", scene);
 	SceneManager::SetActiveScene("1");
 
-	m_pTexture = std::make_shared<Texture>(500, 500, JNF_RGBA);
-    GetSystem<RenderSystem>()->SetRenderTarget(m_pTexture, 500, 500);
+	m_pTexture = std::make_shared<Texture>(500, 600, JNF_RGBA);
+    GetSystem<RenderSystem>()->SetRenderTarget(m_pTexture, 500, 600);
 }
 
 void Editor::_update()
@@ -127,7 +127,12 @@ void Editor::_onGui()
     glm::vec2 uv_max = { 1.0f, 0.0f };                 // top-right
     glm::vec4 tint_col = { 1.0f, 1.0f, 1.0f, 1.0f };   // No tint
     glm::vec4 border_col = { 1.0f, 1.0f, 1.0f, 0.5f }; // 50% opaque white
-    ImGui::Image((ImTextureID)m_pTexture->GetHandle(), glm::vec2(500, 500), uv_min, uv_max);
+
+
+	glm::vec2 size = ImGui::GetContentRegionAvail();
+	glm::vec2 viewportSize = { size.x, size.y };
+    GetSystem<RenderSystem>()->ResizeColorAttachment(viewportSize.x, viewportSize.y);
+    ImGui::Image((ImTextureID)m_pTexture->GetHandle(), size, uv_min, uv_max);
     ImGui::End();
 }
 

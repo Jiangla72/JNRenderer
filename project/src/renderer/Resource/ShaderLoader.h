@@ -7,7 +7,7 @@ class JNAPI ShaderLoader : public ILoader
 public:
 	ShaderLoader ();
 	~ShaderLoader();
-	virtual bool Load(const std::string& resPath, std::shared_ptr<IResource> pRes);
+	virtual bool Load(const std::string& resPath, std::shared_ptr<IResource> pRes) override;
 private:
 
 };

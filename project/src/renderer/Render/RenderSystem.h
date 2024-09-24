@@ -19,9 +19,8 @@ private:
 	unsigned int fbo = 0; // FBO对象的句柄
 	unsigned int colorBuffer = 0; // 颜色缓冲区对象的句柄
 	unsigned int depthBuffer = 0; // 深度缓冲区对象的句柄
-	int width = 800; // FBO的宽度
-	int height = 600; // FBO的高度
-
+	int m_nWidth = 1000; // FBO的宽度
+	int m_nHeight = 600; // FBO的高度
 	std::vector<IPass*> m_vecPasses;
 	RenderContext m_sRenderContext;
 	std::shared_ptr<Texture> m_pTexture = nullptr;
@@ -32,7 +31,11 @@ public:
 
 	void SetRenderTarget(std::shared_ptr<Texture> texture,int width, int height);
 	void SetRenderContext(RenderContext& renderContext) { m_sRenderContext = renderContext; };
+	void ResizeColorAttachment(uint32_t width, uint32_t height);
+
+
 	static unsigned int GetMainFBO();
+public:
 	virtual void OnInit();
 	virtual void OnUninit();
 	virtual void OnUpdate();

@@ -1,5 +1,6 @@
 #pragma once
 #include "ILoader.h"
+
 class JNAPI TextureLoader : public ILoader
 {
 public:

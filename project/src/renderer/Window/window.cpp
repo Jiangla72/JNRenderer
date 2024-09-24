@@ -66,7 +66,7 @@ void scroll_callback(GLFWwindow* window, double x, double y)
 
 void framebuffer_size_callback(GLFWwindow* window, int w, int h)
 {
-	glViewport(0, 0, w, h);
+	//glViewport(0, 0, w, h);
 }
 Window::Window()
 {
