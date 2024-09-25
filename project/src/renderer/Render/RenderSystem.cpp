@@ -4,6 +4,8 @@
 #include "Render/Texture.h"
 #include "Scene/SceneManager.h"
 #include "engine.h"
+#include "Scene/Scene.h"
+#include "Camera.h"
 RenderSystem::RenderSystem()
 {
 
@@ -128,7 +130,11 @@ void RenderSystem::ResizeColorAttachment(uint32_t width, uint32_t height)
 		if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE) {
 			// ´¦Àí´íÎó
 		}
+
 		glViewport(0, 0, width, height);
+
+		Camera* pMainCamera = m_sRenderContext.scene->getCamera();
+		pMainCamera->setAspectRatio((float)width / (float)height);
 		glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
 	}
