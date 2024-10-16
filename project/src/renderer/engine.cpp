@@ -23,6 +23,12 @@ std::shared_ptr <Engine> Engine::GetEngine()
 	return Instance;
 }
 
+void Engine::Resize(uint32_t renderWidth, uint32_t renderHeight, uint32_t windowWidth, uint32_t windowHeight)
+{
+	for (auto system : m_vecSystems)
+		system->OnResize(renderWidth, renderHeight, windowWidth, windowHeight);
+}
+
 void Engine::start()
 {
 	LogSystem::init();

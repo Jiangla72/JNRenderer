@@ -24,8 +24,8 @@ DefaltForwardPass::~DefaltForwardPass()
 
 void DefaltForwardPass::Init()
 {
-	m_pShaderModule = ShaderModule::GetShaderModule("G:\\JNRenderer\\JNRenderer\\shaders\\defaultShader.vsh", "G:\\JNRenderer\\JNRenderer\\shaders\\defaultShader.fsh");
-	texture1 = TextureHelper::CreateTextureFromFile("G:\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
+	m_pShaderModule = ShaderModule::GetShaderModule("D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.vsh", "D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.fsh");
+	texture1 = TextureHelper::CreateTextureFromFile("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
 
 }
 
@@ -67,6 +67,10 @@ void DefaltForwardPass::_RenderScene(std::shared_ptr<Scene> scene)
 	{
 		model->render();
 	}
+}
+
+void DefaltForwardPass::OnResize(uint32_t renderWidth, uint32_t renderHeight)
+{
 }
 
 void DefaltForwardPass::Update()

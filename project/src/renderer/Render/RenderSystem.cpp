@@ -1,6 +1,8 @@
 #include "RenderSystem.h"
 #include "RenderPasses/IPass.h"
 #include "RenderPasses/DefaltForwardPass.h"
+#include "RenderPasses/DeferredPass.h"
+
 #include "Render/Texture.h"
 #include "Scene/SceneManager.h"
 #include "engine.h"
@@ -24,11 +26,18 @@ void RenderSystem::OnInit()
 {
 
 
-	DefaltForwardPass* pass = new DefaltForwardPass();
-	m_vecPasses.push_back(pass);
+	DefaltForwardPass* pass1 = new DefaltForwardPass();
+	DeferredPass* pass2 = new DeferredPass();
+	//m_vecPasses.push_back(pass1);
+	m_vecPasses.push_back(pass2);
+
 	for (auto pass : m_vecPasses)
 	{
 		pass->Init();
+	}
+	for (auto pass : m_vecPasses)
+	{
+		pass->OnResize(m_nWidth,m_nHeight);
 	}
 
 }
@@ -56,6 +65,19 @@ void RenderSystem::OnRender()
 	for (auto pass:m_vecPasses)
 	{
 		pass->Render();
+	}
+}
+
+void RenderSystem::OnResize(uint32_t renderWidth, uint32_t renderHeight, uint32_t windowWidth, uint32_t windowHeight)
+{
+	if (renderWidth == -1 || renderHeight == -1)
+	{
+		return;
+	}
+	_ResizeColorAttachment(renderWidth, renderHeight);
+	for (auto pass : m_vecPasses)
+	{
+		pass->OnResize(m_nWidth, m_nHeight);
 	}
 }
 
@@ -103,7 +125,7 @@ void RenderSystem::SetRenderTarget(std::shared_ptr<Texture> texture, int width, 
 }
 
 
-void RenderSystem::ResizeColorAttachment(uint32_t width, uint32_t height)
+void RenderSystem::_ResizeColorAttachment(uint32_t width, uint32_t height)
 {
 	if (fbo != -1 && (width != m_nWidth || height != m_nHeight))
 	{

@@ -31,7 +31,6 @@ public:
 
 	void SetRenderTarget(std::shared_ptr<Texture> texture,int width, int height);
 	void SetRenderContext(RenderContext& renderContext) { m_sRenderContext = renderContext; };
-	void ResizeColorAttachment(uint32_t width, uint32_t height);
 
 
 	static unsigned int GetMainFBO();
@@ -41,8 +40,11 @@ public:
 	virtual void OnUpdate();
 	virtual void OnRender();
 	virtual void OnGui() {}
+	virtual void OnResize(uint32_t renderWidth, uint32_t renderHeight, uint32_t windowWidth, uint32_t windowHeight);
 	virtual void BeforePresent() {}
 
 private:
 	void _UpdateRenderContext();
+	void _ResizeColorAttachment(uint32_t width, uint32_t height);
+
 };

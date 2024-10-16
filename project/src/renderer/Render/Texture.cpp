@@ -125,6 +125,30 @@ uint32_t Texture::GetSize() const
 	return 0;
 }
 
+auto Texture::Resize(uint32_t i_width, uint32_t i_height) -> bool
+{
+	if (width != i_width || height != i_height)
+	{
+
+		glBindTexture(GL_TEXTURE_2D, texture);
+		width = i_width;
+		height = i_height;
+		unsigned int format = 0;
+		if (nrChannels == 3)
+		{
+			format = GL_RGB;
+		}
+		else if (nrChannels == 4)
+		{
+			format = GL_RGBA;
+		}
+		glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, nullptr);
+		glGenerateMipmap(GL_TEXTURE_2D);
+		glBindTexture(GL_TEXTURE_2D, 0);
+	}
+	return true;
+}
+
 namespace TextureHelper {
 
 	std::shared_ptr<Texture> CreateTexture(const TextureDesc& sDesc)

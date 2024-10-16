@@ -1,4 +1,4 @@
-[2024-09-22 23:58:17.378] [JNLog] [info] LogSystem Inited.
-[2024-09-22 23:58:17.378] [JNLog] [info] ResManager Inited.
-[2024-09-22 23:58:17.378] [JNLog] [info] SceneManager Inited.
-[2024-09-22 23:58:17.593] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2024-10-16 23:22:50.188] [JNLog] [info] LogSystem Inited.
+[2024-10-16 23:22:50.189] [JNLog] [info] ResManager Inited.
+[2024-10-16 23:22:50.189] [JNLog] [info] SceneManager Inited.
+[2024-10-16 23:22:55.482] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1

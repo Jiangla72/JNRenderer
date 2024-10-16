@@ -50,6 +50,7 @@ public:
 		return std::dynamic_pointer_cast<T>(m_mapSystems[hashcode]);
 	}
 
+	void Resize(uint32_t renderWidth, uint32_t renderHeight, uint32_t windowWidth, uint32_t windowHeight);
 private:
 	void start();
 

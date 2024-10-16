@@ -12,17 +12,21 @@ class Camera;
 class ShaderModule;
 class Texture;
 class RenderSystem;
-class JNAPI DefaltForwardPass:public IPass
+class JNAPI DeferredPass : public IPass
 {
 private:
-	unsigned int VBO, VAO;
 	std::shared_ptr<ShaderModule> m_pShaderModule = nullptr;
 	float frame = 0;
 	std::shared_ptr<Texture> texture1 = nullptr;
+	std::shared_ptr<Texture> m_gBuffer1 = nullptr; //position
+	std::shared_ptr<Texture> m_gBuffer2 = nullptr; //normal
+	std::shared_ptr<Texture> m_gBuffer3 = nullptr; //color and specular
+	//std::shared_ptr<Texture> m_gBuffer4 = nullptr;
+
 	RenderSystem* m_pRenderSystem = nullptr;
 public:
-	DefaltForwardPass();
-	~DefaltForwardPass();
+	DeferredPass();
+	~DeferredPass();
 
 	void Init() override;
 
@@ -31,9 +35,10 @@ public:
 	void Render() override;
 	void Release() override;
 	void OnResize(uint32_t renderWidth, uint32_t renderHeight) override;
-
+private:
+	unsigned int m_uGbufferFBO;
 private:
 	void _RenderScene(std::shared_ptr<Scene> scene);
-
+	auto _RecreateRenderResource() -> bool;
 
 };

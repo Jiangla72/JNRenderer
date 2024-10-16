@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Base/Input.h"
 #include "Base/LogSystem.h"
+#include "Engine.h"
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
 	if (action == GLFW_PRESS)
@@ -66,7 +67,7 @@ void scroll_callback(GLFWwindow* window, double x, double y)
 
 void framebuffer_size_callback(GLFWwindow* window, int w, int h)
 {
-	//glViewport(0, 0, w, h);
+	Engine::GetEngine()->Resize(-1, -1, w, h);
 }
 Window::Window()
 {
