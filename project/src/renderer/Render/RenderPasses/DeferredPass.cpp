@@ -24,8 +24,10 @@ DeferredPass::~DeferredPass()
 
 void DeferredPass::Init()
 {
-	m_pShaderModule = ShaderModule::GetShaderModule("D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\gBufferShader.vsh", "D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\gBufferShader.fsh");
-	texture1 = TextureHelper::CreateTextureFromFile("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
+	//m_pShaderModule = ShaderModule::GetShaderModule("D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\gBufferShader.vsh", "D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\gBufferShader.fsh");
+	//texture1 = TextureHelper::CreateTextureFromFile("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
+	m_pShaderModule = ShaderModule::GetShaderModule("G:\\JNRenderer\\JNRenderer\\shaders\\gBufferShader.vsh", "G:\\JNRenderer\\JNRenderer\\shaders\\gBufferShader.fsh");
+	texture1 = TextureHelper::CreateTextureFromFile("G:\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
 	if (m_gBuffer1)
 	{
 		m_gBuffer1->Release();

@@ -3,7 +3,8 @@
 #include "EngineInterface.h"
 void Editor::_CreateDemoScene()
 {
-    std::string pathModel = "D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj";
+	//std::string pathModel = "D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj";
+	std::string pathModel = "G:\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj";
     std::shared_ptr<Model> bunny = ResourceManager::GetResource<Model>(pathModel);
     JNLOGINFO("Create Model at path : {} , with mesh count : {}", pathModel, bunny->m_vecMesh.size());
 
