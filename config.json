@@ -1,0 +1,37 @@
+{
+  "RootPath": "G:/JNRenderer/JNRenderer/",
+  "shaders": {
+    "gBuffer": {
+      "vertex": "shaders/gBufferShader.vsh",
+      "fragment": "shaders/gBufferShader.fsh"
+    },
+    "lighting": {
+      "vertex": "shaders/deferredLighting.vsh",
+      "fragment": "shaders/deferredLighting.fsh"
+    },
+    "shadow": {
+      "vertex": "shaders/shadow.vsh",
+      "fragment": "shaders/shadow.fsh"
+    },
+    "postProcess": {
+      "vertex": "shaders/bloom.vsh",
+      "fragment": "shaders/bloom.fsh"
+    },
+    "toneMapping": {
+      "vertex": "shaders/toneMapping.vsh",
+      "fragment": "shaders/toneMapping.fsh"
+    }
+  },
+  "models": {
+    "spot": {
+      "texture": "models/spot/spot_texture.png"
+    }
+  },
+  "window": {
+    "width": 1000,
+    "height": 600
+  },
+  "shadow": {
+    "mapSize": 1024
+  }
+}

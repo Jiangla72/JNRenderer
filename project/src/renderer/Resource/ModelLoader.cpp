@@ -48,7 +48,7 @@ bool ModelLoader::Load(const std::string& resPath, std::shared_ptr<IResource> pR
 		bResult = _LoadGLTF(resPath, model);
 	}
 	else
-		JNLOGERROR("²»Ö§³ÖµÄÄ£ÐÍÎÄ¼þºó×º£º{}",ext);
+		JNLOGERROR("ï¿½ï¿½Ö§ï¿½Öµï¿½Ä£ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½×ºï¿½ï¿½{}",ext);
 	
 	return bResult;
 }
@@ -104,7 +104,7 @@ bool ModelLoader::_LoadOBJ(const std::string& resPath, std::shared_ptr<Model> pR
 		if (attrib.normals.empty())
 			Mesh::generateNormals(vertices, indices);
 
-		Mesh* mesh = new Mesh(indices, vertices);
+		std::shared_ptr<Mesh> mesh = std::make_shared<Mesh>(indices, vertices);
 
 		for (int i = 0; i < indices.size(); i += 3)
 		{

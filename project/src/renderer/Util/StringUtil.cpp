@@ -20,4 +20,31 @@ namespace StringUtil
 			return strExt;
 		}
 	}
+	std::string CombineFilePath(const std::string& rootPath, const std::string& relativePath)
+	{
+        if (rootPath.empty()) {
+            return relativePath;
+        }
+        if (relativePath.empty()) {
+            return rootPath;
+        }
+
+        std::string finalPath = rootPath;
+        char lastChar = finalPath.back(); // 获取根路径最后一个字符
+
+        // 判断根路径末尾是否已有路径分隔符（Windows:\  Linux:/）
+        bool hasSeparator = (lastChar == '\\' || lastChar == '/');
+
+        // 若没有分隔符，自动补充对应系统的路径分隔符
+        if (!hasSeparator) {
+#ifdef _WIN32 // Windows系统
+            finalPath += '\\';
+#else // Linux/Mac系统
+            finalPath += '/';
+#endif
+        }
+
+        finalPath += relativePath;
+        return finalPath;
+	}
 }

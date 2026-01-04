@@ -1,5 +1,6 @@
 #include "DeferredPass.h"
 #include "Base/Input.h"
+#include "Base/Config.h"
 #include "Render/RenderSystem.h"
 #include "Render/Triangle.h"
 #include "Render/Camera.h"
@@ -15,6 +16,8 @@
 
 DeferredPass::DeferredPass()
 {
+	m_uWidth = 640;
+	m_uHeight = 480;
 }
 
 DeferredPass::~DeferredPass()
@@ -26,8 +29,22 @@ void DeferredPass::Init()
 {
 	//m_pShaderModule = ShaderModule::GetShaderModule("D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\gBufferShader.vsh", "D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\gBufferShader.fsh");
 	//texture1 = TextureHelper::CreateTextureFromFile("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
-	m_pShaderModule = ShaderModule::GetShaderModule("G:\\JNRenderer\\JNRenderer\\shaders\\gBufferShader.vsh", "G:\\JNRenderer\\JNRenderer\\shaders\\gBufferShader.fsh");
-	texture1 = TextureHelper::CreateTextureFromFile("G:\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
+	m_pShaderModule = ShaderModule::GetShaderModule(Config::GetShaderPath("gBuffer", "vertex").c_str(), Config::GetShaderPath("gBuffer", "fragment").c_str());
+	texture1 = TextureHelper::CreateTextureFromFile(Config::GetModelTexturePath("spot"));
+	
+	// Create default white texture
+	//TextureDesc texDesc;
+	//texDesc.width = 1;
+	//texDesc.height = 1;
+	//texDesc.format = JNF_RGBA;
+	//texture1 = TextureHelper::CreateTexture(texDesc);
+	
+	// Fill with white
+	glBindTexture(GL_TEXTURE_2D, texture1->GetHandle());
+	unsigned char white[] = { 255, 255, 255, 255 };
+	glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, 1, 1, GL_RGBA, GL_UNSIGNED_BYTE, white);
+	glBindTexture(GL_TEXTURE_2D, 0);
+
 	if (m_gBuffer1)
 	{
 		m_gBuffer1->Release();
@@ -45,7 +62,11 @@ void DeferredPass::Init()
 		m_gBuffer3.reset();
 	}
 
-
+	if (m_gBuffer4)
+	{
+		m_gBuffer4->Release();
+		m_gBuffer4.reset();
+	}
 
 	TextureDesc desc{};
 	desc.width = m_uWidth;
@@ -55,6 +76,7 @@ void DeferredPass::Init()
 	m_gBuffer1 = TextureHelper::CreateTexture(desc);
 	m_gBuffer2 = TextureHelper::CreateTexture(desc);
 	m_gBuffer3 = TextureHelper::CreateTexture(desc);
+	m_gBuffer4 = TextureHelper::CreateTexture(desc);
 
 }
 
@@ -67,53 +89,80 @@ void DeferredPass::_RenderScene(std::shared_ptr<Scene> scene)
 	const std::vector<std::shared_ptr<Model>>& models = scene->getModels();
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
+	glCullFace(GL_FRONT);
 	glClearColor(0.f, 0.f, 0.f, 0.f);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	Camera* camera= scene->getCamera();
 	CameraData cameraData = camera->getCameraData();
 
-	m_pShaderModule->setUniformMatrix4fv("mvpMatrix", cameraData.matViewProject);
-
 	texture1->BindTexture(0);
 	m_pShaderModule->useTexture("texture1", 0);
 
-	for(auto model : models)
+	for(auto& model : models)
 	{
+		glm::mat4 modelMatrix = model->GetModelMatrix();
+		glm::mat4 mvpMatrix = cameraData.matViewProject * modelMatrix;
+		
+		m_pShaderModule->setUniformMatrix4fv("mvpMatrix", mvpMatrix);
+		m_pShaderModule->setUniformMatrix4fv("model", modelMatrix);
+		
 		model->render();
 	}
 }
 
-auto DeferredPass::_RecreateRenderResource() -> bool
+bool DeferredPass::_RecreateRenderResource()
 {
 	if (m_uGbufferFBO != -1)
 	{
 		glDeleteFramebuffers(1,&m_uGbufferFBO);
 	}
 	
+	if (m_depthRBO != -1)
+	{
+		glDeleteRenderbuffers(1, &m_depthRBO);
+	}
 
 	glGenFramebuffers(1, &m_uGbufferFBO);
 	glBindFramebuffer(GL_FRAMEBUFFER, m_uGbufferFBO);
 	
-	// - Î»ÖÃÑÕÉ«»º³å
+	// - ä½ç½®é¢œè‰²ç¼“å†²
 	glBindTexture(GL_TEXTURE_2D, m_gBuffer1->GetHandle());
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB16F, m_uWidth, m_uHeight, 0, GL_RGB, GL_FLOAT, NULL);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, m_gBuffer1->GetHandle(), 0);
 
-	// - ·¨ÏßÑÕÉ«»º³å
+	// - æ³•çº¿é¢œè‰²ç¼“å†²
 	glBindTexture(GL_TEXTURE_2D, m_gBuffer2->GetHandle());
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB16F, m_uWidth, m_uHeight, 0, GL_RGB, GL_FLOAT, NULL);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT1, GL_TEXTURE_2D, m_gBuffer2->GetHandle(), 0);
 
-	// - ÑÕÉ« + ¾µÃæÑÕÉ«»º³å
+	// - é¢œè‰² + é•œé¢åå°„é¢œè‰²ç¼“å†²
 	glBindTexture(GL_TEXTURE_2D, m_gBuffer3->GetHandle());
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, m_uWidth, m_uHeight, 0, GL_RGBA, GL_FLOAT, NULL);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT2, GL_TEXTURE_2D, m_gBuffer3->GetHandle(), 0);
+
+	// - é‡‘å±žåº¦ + ç²—ç³™åº¦ç¼“å†²
+	glBindTexture(GL_TEXTURE_2D, m_gBuffer4->GetHandle());
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, m_uWidth, m_uHeight, 0, GL_RGBA, GL_FLOAT, NULL);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT3, GL_TEXTURE_2D, m_gBuffer4->GetHandle(), 0);
+
+	// - æ·±åº¦ç¼“å†²
+	glGenRenderbuffers(1, &m_depthRBO);
+	glBindRenderbuffer(GL_RENDERBUFFER, m_depthRBO);
+	glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT, m_uWidth, m_uHeight);
+	glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, m_depthRBO);
+
+	if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
+		//std::cout << "Framebuffer not complete!" << std::endl;
+		return false;
+
 	return true;
 }
 
@@ -134,14 +183,21 @@ void DeferredPass::Update()
 
 void DeferredPass::Render()
 {
-	RenderContext context = RenderSystem::GetRenderContext();
+	RenderContext& context = RenderSystem::GetRenderContext();
 	//unsigned int fbo = RenderSystem::GetMainFBO();
 	glBindFramebuffer(GL_FRAMEBUFFER, m_uGbufferFBO);
+	// ç¡®ä¿ä¸ŽG-Bufferå°ºå¯¸ä¸€è‡´çš„è§†å£ï¼Œé¿å…ä¸Šä¸€Passä¿®æ”¹å¯¼è‡´å°ºå¯¸ä¸åŒ¹é…
+	glViewport(0, 0, m_uWidth, m_uHeight);
 
+	// æ›´æ–°RenderContextä¸­çš„G-Bufferæ•°æ®
+	context.m_gBuffer1 = m_gBuffer1;
+	context.m_gBuffer2 = m_gBuffer2;
+	context.m_gBuffer3 = m_gBuffer3;
+	context.m_gBuffer4 = m_gBuffer4;
 
-		// - ¸æËßOpenGLÎÒÃÇ½«ÒªÊ¹ÓÃ(Ö¡»º³åµÄ)ÄÄÖÖÑÕÉ«¸½¼þÀ´½øÐÐäÖÈ¾
-	GLuint attachments[3] = { GL_COLOR_ATTACHMENT0, GL_COLOR_ATTACHMENT1, GL_COLOR_ATTACHMENT2 };
-	glDrawBuffers(3, attachments);
+	// - å‘Šè¯‰OpenGLéœ€è¦ä½¿ç”¨(å¸§ç¼“å†²)å¤šä¸ªé¢œè‰²é™„ä»¶è¿›è¡Œæ¸²æŸ“
+	GLuint attachments[4] = { GL_COLOR_ATTACHMENT0, GL_COLOR_ATTACHMENT1, GL_COLOR_ATTACHMENT2, GL_COLOR_ATTACHMENT3 };
+	glDrawBuffers(4, attachments);
 	_RenderScene(context.scene);
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
@@ -149,5 +205,13 @@ void DeferredPass::Render()
 
 void DeferredPass::Release()
 {
+	if (m_uGbufferFBO != -1)
+	{
+		glDeleteFramebuffers(1, &m_uGbufferFBO);
+	}
+	if (m_depthRBO != -1)
+	{
+		glDeleteRenderbuffers(1, &m_depthRBO);
+	}
 }
 

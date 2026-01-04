@@ -1,4 +1,3950 @@
-[2024-10-16 23:22:50.188] [JNLog] [info] LogSystem Inited.
-[2024-10-16 23:22:50.189] [JNLog] [info] ResManager Inited.
-[2024-10-16 23:22:50.189] [JNLog] [info] SceneManager Inited.
-[2024-10-16 23:22:55.482] [JNLog] [info] Create Model at path : D:\Workspace\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2025-12-31 15:00:22.935] [JNLog] [info] LogSystem Inited.
+[2025-12-31 15:00:22.936] [JNLog] [info] Config loaded.
+[2025-12-31 15:00:22.936] [JNLog] [info] ResManager Inited.
+[2025-12-31 15:00:22.936] [JNLog] [info] SceneManager Inited.
+[2025-12-31 15:00:23.252] [JNLog] [error] ERROR::SHADER::TYPE:35632::COMPILATION_FAILED
+0(70) : error C0000: syntax error, unexpected identifier, expecting ',' or ';' at token "currentDepth"
+
+
+[2025-12-31 15:00:23.261] [JNLog] [error] ERROR::SHADER::LINK::COMPILATION_FAILED
+Fragment info
+-------------
+0(70) : error C0000: syntax error, unexpected identifier, expecting ',' or ';' at token "currentDepth"
+(0) : error C2003: incompatible options for link
+
+
+[2025-12-31 15:00:23.330] [JNLog] [info] Create Model at path : G:\JNRenderer\JNRenderer\models\spot\spot_triangulated_good.obj , with mesh count : 1
+[2025-12-31 15:00:26.906] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:26.907] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:26.909] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:26.909] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:26.909] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:26.909] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:26.909] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:26.910] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:26.911] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:26.965] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:26.966] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:26.967] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:26.967] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:26.968] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:26.968] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:26.968] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:26.969] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:26.969] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:26.970] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:26.970] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:26.970] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:26.970] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:26.970] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:26.971] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:26.971] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:26.971] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:26.972] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:26.983] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:26.984] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:26.984] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:26.985] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:26.986] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:26.986] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:26.986] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:26.987] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:26.987] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.000] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.002] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.002] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.002] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.002] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.003] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.003] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.003] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.004] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.016] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.017] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.018] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.018] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.019] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.019] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.020] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.020] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.021] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.033] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.034] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.034] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.034] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.034] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.034] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.035] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.035] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.035] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.050] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.050] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.051] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.051] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.052] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.052] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.052] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.052] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.052] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.066] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.067] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.067] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.067] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.067] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.068] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.068] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.068] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.068] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.083] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.084] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.084] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.085] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.085] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.085] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.085] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.085] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.086] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.100] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.100] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.100] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.101] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.101] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.101] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.101] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.101] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.102] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.116] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.117] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.118] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.119] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.119] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.119] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.119] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.120] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.120] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.133] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.134] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.134] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.135] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.135] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.135] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.136] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.136] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.136] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.150] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.150] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.152] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.152] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.152] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.152] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.153] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.153] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.153] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.166] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.167] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.167] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.167] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.168] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.168] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.168] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.168] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.168] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.183] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.184] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.185] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.185] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.185] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.185] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.185] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.186] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.186] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.200] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.200] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.201] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.202] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.202] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.202] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.203] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.203] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.205] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.217] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.217] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.217] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.218] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.218] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.219] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.219] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.219] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.219] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.233] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.233] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.234] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.234] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.234] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.234] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.234] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.235] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.235] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.250] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.250] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.251] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.254] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.254] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.254] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.254] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.255] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.255] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.267] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.268] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.269] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.269] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.270] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.270] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.270] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.270] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.271] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.283] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.284] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.284] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.284] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.285] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.285] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.285] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.285] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.285] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.300] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.301] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.302] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.302] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.302] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.303] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.303] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.303] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.304] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.317] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.317] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.317] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.317] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.318] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.318] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.318] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.318] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.318] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.333] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.334] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.335] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.335] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.335] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.335] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.335] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.335] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.336] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.350] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.350] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.351] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.351] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.351] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.351] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.351] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.352] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.352] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.366] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.367] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.368] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.368] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.368] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.368] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.369] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.369] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.369] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.383] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.384] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.384] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.384] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.384] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.385] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.385] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.385] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.385] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.400] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.400] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.402] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.402] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.402] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.402] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.402] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.403] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.403] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.416] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.417] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.417] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.417] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.417] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.417] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.418] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.418] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.418] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.433] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.433] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.435] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.435] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.435] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.435] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.435] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.435] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.436] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.450] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.450] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.450] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.451] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.451] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.451] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.451] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.452] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.452] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.466] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.467] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.468] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.468] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.468] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.468] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.469] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.470] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.470] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.483] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.484] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.484] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.484] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.484] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.484] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.485] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.486] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.486] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.500] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.500] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.500] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.502] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.502] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.502] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.502] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.502] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.503] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.516] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.517] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.518] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.519] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.519] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.519] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.519] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.519] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.519] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.533] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.533] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.534] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.534] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.534] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.534] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.534] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.534] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.535] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.550] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.550] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.551] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.552] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.552] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.552] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.552] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.553] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.553] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.567] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.567] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.567] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.567] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.567] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.568] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.568] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.568] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.568] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.583] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.583] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.585] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.585] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.585] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.585] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.585] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.585] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.586] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.600] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.600] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.600] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.601] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.601] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.601] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.601] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.601] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.602] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.617] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.617] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.618] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.618] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.618] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.619] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.619] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.619] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.619] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.633] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.633] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.634] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.634] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.634] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.634] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.634] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.634] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.635] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.650] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.650] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.652] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.652] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.652] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.652] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.652] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.652] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.652] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.666] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.667] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.667] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.667] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.668] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.668] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.668] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.668] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.668] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.683] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.683] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.684] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.685] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.685] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.685] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.685] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.685] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.685] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.700] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.700] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.700] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.700] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.701] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.701] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.701] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.701] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.701] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.717] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.717] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.718] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.718] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.718] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.718] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.719] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.719] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.719] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.733] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.734] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.734] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.734] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.735] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.735] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.735] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.736] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.736] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.750] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.751] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.751] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.752] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.752] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.752] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.752] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.754] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.755] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.767] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.770] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.770] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.771] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.771] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.772] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.772] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.772] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.772] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.783] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.784] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.786] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.786] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.786] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.787] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.787] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.787] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.787] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.800] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.801] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.802] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.802] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.802] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.802] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.802] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.802] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.803] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.817] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.818] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.818] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.818] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.818] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.818] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.819] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.819] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.819] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.833] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.833] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.835] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.835] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.836] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.836] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.836] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.837] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.837] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.850] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.850] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.850] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.850] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.851] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.851] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.851] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.851] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.851] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.867] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.867] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.868] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.868] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.868] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.869] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.869] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.869] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.869] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.883] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.884] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.886] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.886] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.886] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.886] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.886] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.887] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.887] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.903] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.904] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.905] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.906] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.907] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.907] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.907] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.908] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.908] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.917] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.917] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.917] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.917] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.918] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.918] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.918] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.918] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.918] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.933] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.934] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.935] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.935] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.935] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.935] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.935] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.935] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.936] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.950] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.950] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.950] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.951] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.951] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.951] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.951] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.951] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.951] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.967] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.967] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.968] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.968] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.968] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.969] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.969] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.969] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.969] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:27.983] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:27.983] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:27.984] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:27.984] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:27.984] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:27.984] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:27.984] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:27.985] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:27.985] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.000] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.000] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.001] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.002] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.002] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.002] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.002] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.002] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.002] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.016] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.017] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.017] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.017] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.017] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.018] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.018] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.018] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.018] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.033] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.033] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.035] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.036] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.037] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.037] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.037] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.037] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.037] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.050] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.050] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.051] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.052] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.052] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.052] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.052] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.052] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.053] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.067] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.068] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.068] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.068] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.068] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.068] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.068] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.069] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.069] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.083] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.083] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.085] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.085] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.085] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.085] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.086] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.086] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.086] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.100] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.100] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.100] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.101] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.101] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.101] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.101] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.101] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.102] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.117] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.117] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.118] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.119] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.119] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.119] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.120] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.121] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.121] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.133] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.135] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.135] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.135] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.135] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.136] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.136] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.136] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.136] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.150] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.150] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.151] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.152] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.152] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.152] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.152] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.152] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.153] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.167] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.167] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.168] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.168] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.168] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.168] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.168] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.169] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.169] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.183] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.184] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.185] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.185] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.185] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.185] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.185] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.185] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.186] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.200] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.200] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.200] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.201] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.201] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.201] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.201] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.201] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.202] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.216] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.217] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.218] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.218] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.218] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.219] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.219] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.219] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.219] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.233] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.234] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.234] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.234] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.234] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.234] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.234] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.235] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.235] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.250] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.250] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.251] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.252] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.252] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.252] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.252] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.252] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.252] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.267] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.267] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.267] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.268] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.268] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.269] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.270] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.270] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.272] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.283] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.284] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.284] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.284] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.284] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.284] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.285] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.285] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.285] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.300] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.300] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.301] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.301] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.301] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.301] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.301] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.303] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.303] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.316] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.317] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.317] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.318] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.319] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.319] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.319] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.319] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.319] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.333] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.334] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.334] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.337] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.337] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.337] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.337] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.337] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.338] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.350] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.350] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.350] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.351] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.351] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.351] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.351] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.351] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.351] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.367] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.367] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.368] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.370] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.371] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.372] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.373] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.373] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.374] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.383] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.384] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.384] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.385] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.385] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.385] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.385] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.385] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.385] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.400] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.400] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.401] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.402] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.402] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.402] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.402] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.402] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.402] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.417] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.417] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.417] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.417] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.417] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.418] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.418] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.418] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.418] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.433] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.434] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.435] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.435] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.435] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.436] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.436] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.436] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.437] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.450] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.450] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.451] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.451] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.451] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.451] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.452] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.452] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.453] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.902] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.903] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.903] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.904] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.904] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.905] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.905] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.905] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.907] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.908] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.909] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.909] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.909] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.909] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.910] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.910] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.910] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.910] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.917] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.917] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.917] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.918] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.918] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.918] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.918] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.918] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.919] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.933] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.934] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.934] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.934] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.934] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.935] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.935] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.935] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.935] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.950] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.950] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.951] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.952] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.952] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.952] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.952] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.952] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.952] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.966] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.967] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.967] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.967] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.967] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.968] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.968] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.968] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.968] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:28.983] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:28.983] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:28.985] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:28.985] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:28.985] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:28.985] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:28.985] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:28.986] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:28.986] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.000] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.000] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.001] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.001] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.001] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.001] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.002] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.002] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.002] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.017] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.017] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.018] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.018] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.018] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.019] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.019] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.019] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.021] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.033] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.034] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.034] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.034] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.034] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.035] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.036] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.036] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.036] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.050] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.051] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.051] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.051] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.052] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.052] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.052] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.052] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.052] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.067] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.067] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.070] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.070] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.070] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.071] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.071] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.071] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.071] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.083] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.083] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.084] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.084] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.084] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.084] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.084] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.085] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.085] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.100] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.100] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.101] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.102] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.102] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.102] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.102] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.102] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.102] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.117] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.117] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.117] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.117] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.118] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.118] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.118] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.118] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.118] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.133] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.134] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.135] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.135] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.135] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.135] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.135] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.136] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.136] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.150] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.150] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.150] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.151] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.151] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.151] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.151] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.151] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.152] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.166] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.167] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.168] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.168] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.168] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.169] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.169] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.169] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.169] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.183] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.183] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.184] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.184] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.184] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.184] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.184] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.185] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.185] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.200] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.200] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.202] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.202] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.202] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.202] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.203] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.203] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.203] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.217] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.217] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.217] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.218] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.218] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.218] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.218] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.219] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.219] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.233] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.234] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.235] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.235] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.236] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.236] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.237] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.238] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.238] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.250] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.250] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.251] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.251] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.251] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.251] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.251] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.252] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.252] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.267] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.267] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.269] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.269] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.269] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.269] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.270] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.270] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.270] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.283] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.284] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.285] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.285] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.285] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.285] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.285] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.285] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.286] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.300] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.300] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.301] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.301] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.301] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.301] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.302] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.302] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.302] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.317] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.317] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.318] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.318] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.318] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.319] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.319] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.319] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.319] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.333] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.333] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.334] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.334] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.335] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.335] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.335] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.336] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.336] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.350] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.350] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.351] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.352] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.352] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.353] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.353] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.353] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.353] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.367] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.367] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.367] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.367] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.367] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.368] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.368] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.368] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.368] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.383] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.383] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.385] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.385] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.385] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.385] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.385] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.385] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.386] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.400] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.400] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.401] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.401] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.401] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.401] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.401] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.402] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.402] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.417] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.417] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.418] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.418] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.418] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.419] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.419] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.419] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.419] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.433] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.433] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.434] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.434] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.434] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.434] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.434] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.434] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.435] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.450] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.450] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.452] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.453] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.453] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.454] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.455] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.456] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.456] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.467] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.468] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.468] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.469] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.469] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.469] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.469] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.469] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.470] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.483] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.484] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.485] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.485] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.485] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.485] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.486] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.486] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.486] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.500] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.500] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.501] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.501] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.501] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.501] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.501] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.501] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.502] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.517] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.517] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.518] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.519] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.519] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.519] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.520] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.520] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.520] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.533] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.534] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.537] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.537] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.538] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.538] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.538] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.538] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.538] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.550] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.550] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.550] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.550] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.551] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.551] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.551] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.551] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.551] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.567] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.567] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.568] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.568] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.568] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.568] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.569] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.569] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.569] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.583] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.583] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.584] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.584] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.584] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.584] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.584] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.585] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.585] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.600] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.600] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.601] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.602] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.602] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.602] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.602] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.602] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.602] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.617] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.617] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.617] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.618] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.618] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.618] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.618] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.618] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.618] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.633] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.633] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.635] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.635] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.635] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.635] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.635] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.636] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.636] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.650] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.650] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.650] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.650] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.651] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.651] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.651] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.651] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.651] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.667] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.667] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.668] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.668] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.668] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.669] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.669] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.669] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.669] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.683] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.683] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.684] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.684] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.684] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.684] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.684] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.685] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.685] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.700] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.700] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.701] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.702] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.702] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.702] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.702] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.702] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.702] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.716] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.717] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.717] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.717] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.717] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.717] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.718] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.718] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.718] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.733] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.734] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.735] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.735] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.735] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.735] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.736] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.736] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.736] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.750] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.751] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.754] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.754] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.754] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.754] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.754] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.754] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.755] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.766] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.767] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.767] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.768] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.768] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.768] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.768] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.768] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.769] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.783] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.784] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.784] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.785] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.785] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.785] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.785] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.785] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.785] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.800] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.800] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.801] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.801] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.801] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.802] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.802] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.802] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.802] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.817] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.817] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.818] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.818] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.818] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.819] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.819] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.819] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.819] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.833] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.848] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.851] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.851] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.857] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.857] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.857] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.857] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.860] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.868] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.884] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.885] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.885] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.886] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.886] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.887] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.887] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.888] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.889] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.890] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.891] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.894] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.896] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.897] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.898] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.899] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.899] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.901] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.901] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.902] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.902] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.903] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.903] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.903] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.903] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.904] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.917] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.917] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.918] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.918] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.918] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.918] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.918] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.919] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.919] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.933] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.934] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.935] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.935] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.935] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.935] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.935] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.936] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.936] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.950] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.950] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.951] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.951] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.951] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.951] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.952] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.952] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.952] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.967] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.967] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.968] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.968] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.968] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.969] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.969] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.969] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.969] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:29.983] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:29.984] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:29.984] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:29.984] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:29.985] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:29.985] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:29.986] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:29.986] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:29.986] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.000] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.002] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.006] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.006] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.006] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.006] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.007] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.007] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.007] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.017] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.018] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.021] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.021] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.021] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.021] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.021] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.022] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.022] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.034] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.034] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.034] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.035] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.035] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.035] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.036] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.036] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.037] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.050] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.050] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.052] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.053] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.053] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.053] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.054] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.054] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.054] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.067] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.067] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.067] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.067] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.068] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.068] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.069] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.069] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.069] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.083] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.084] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.085] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.085] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.085] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.085] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.086] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.086] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.086] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.100] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.100] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.101] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.101] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.102] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.102] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.102] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.102] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.103] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.117] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.117] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.118] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.118] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.118] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.119] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.119] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.119] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.119] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.133] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.133] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.134] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.134] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.134] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.134] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.134] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.135] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.135] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.150] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.150] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.151] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.152] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.152] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.152] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.152] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.152] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.152] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.167] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.167] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.167] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.167] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.168] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.168] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.168] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.168] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.168] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.183] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.184] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.185] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.185] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.185] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.185] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.185] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.186] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.186] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.200] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.200] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.200] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.201] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.201] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.201] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.201] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.201] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.202] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.217] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.217] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.218] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.218] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.219] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.219] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.219] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.219] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.219] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.233] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.234] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.237] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.238] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.238] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.238] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.238] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.238] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.239] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.250] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.251] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.251] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.253] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.253] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.253] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.254] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.254] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.255] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.267] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.267] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.268] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.268] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.268] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.269] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.269] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.269] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.269] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.283] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.284] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.285] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.285] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.285] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.286] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.286] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.286] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.287] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.300] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.300] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.301] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.302] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.302] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.302] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.302] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.302] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.303] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.317] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.317] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.317] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.318] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.318] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.318] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.319] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.319] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.319] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.333] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.334] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.335] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.335] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.335] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.335] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.335] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.336] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.336] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.350] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.350] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.350] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.351] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.351] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.351] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.351] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.351] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.352] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.367] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.367] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.368] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.368] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.368] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.369] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.369] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.369] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.369] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.383] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.384] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.384] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.384] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.384] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.384] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.385] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.385] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.385] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.400] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.400] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.401] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.402] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.402] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.402] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.402] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.402] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.402] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.417] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.417] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.418] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.418] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.419] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.419] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.419] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.421] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.422] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.433] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.434] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.434] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.434] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.434] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.435] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.435] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.435] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.436] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.450] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.451] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.451] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.452] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.452] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.453] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.453] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.453] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.453] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.467] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.468] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.468] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.469] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.469] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.469] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.469] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.469] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.470] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.483] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.484] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.485] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.485] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.485] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.485] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.486] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.486] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.486] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.500] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.502] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.503] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.503] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.503] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.503] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.503] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.503] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.504] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.517] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.517] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.518] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.519] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.519] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.519] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.520] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.520] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.520] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.533] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.534] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.535] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.536] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.537] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.538] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.538] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.539] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.539] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.550] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.550] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.551] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.552] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.552] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.552] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.552] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.552] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.552] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.567] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.567] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.567] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.568] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.568] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.568] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.568] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.568] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.568] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.583] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.583] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.585] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.585] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.585] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.585] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.585] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.586] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.586] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.600] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.600] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.601] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.601] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.601] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.601] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.601] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.602] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.602] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.617] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.617] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.618] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.618] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.618] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.619] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.619] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.619] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.619] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.633] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.633] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.634] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.634] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.634] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.634] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.634] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.634] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.635] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.650] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.650] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.651] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.652] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.652] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.652] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.652] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.652] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.652] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.667] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.669] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.669] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.670] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.670] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.670] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.671] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.671] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.673] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.683] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.684] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.684] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.684] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.685] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.685] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.685] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.685] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.685] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.700] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.700] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.700] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.701] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.701] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.701] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.701] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.701] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.701] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.717] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.717] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.718] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.718] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.718] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.719] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.719] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.720] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.720] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.733] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.734] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.734] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.734] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.734] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.734] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.735] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.736] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.736] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.750] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.751] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.752] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.753] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.753] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.753] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.753] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.753] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.753] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.767] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.767] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.770] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.770] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.771] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.771] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.771] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.771] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.771] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.783] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.784] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.784] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.784] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.784] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.785] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.785] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.785] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.785] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.800] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.801] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.802] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.802] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.802] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.802] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.802] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.802] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.803] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.817] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.817] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.817] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.817] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.817] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.818] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.818] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.818] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.818] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.833] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.833] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.835] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.835] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.835] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.835] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.835] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.835] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.836] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.850] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.850] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.850] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.851] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.851] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.851] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.851] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.851] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.851] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.867] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.867] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.868] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.868] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.868] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.869] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.869] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.869] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.869] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.883] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.883] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.884] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.884] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.884] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.884] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.884] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.885] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.885] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.900] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.900] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.901] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.902] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.902] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.902] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.902] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.902] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.902] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.917] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.917] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.918] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.919] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.920] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.920] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.920] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.921] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.921] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.933] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.934] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.935] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.935] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.935] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.935] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.936] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.936] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.936] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.950] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.951] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.951] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.952] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.952] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.952] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.953] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.953] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.953] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.967] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.967] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.968] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.969] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.969] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.970] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.970] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.970] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.971] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:30.983] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:30.984] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:30.984] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:30.985] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:30.985] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+
+[2025-12-31 15:00:30.985] [JNLog] [error] 找不到 lightPositions[1] Uniform3fv!
+
+[2025-12-31 15:00:30.985] [JNLog] [error] 找不到 lightColors[1] Uniform3fv!
+
+[2025-12-31 15:00:30.985] [JNLog] [error] 找不到 lightPositions[2] Uniform3fv!
+
+[2025-12-31 15:00:30.986] [JNLog] [error] 找不到 lightColors[2] Uniform3fv!
+
+[2025-12-31 15:00:31.000] [JNLog] [error] 找不到 lightSpaceMatrix UniformMatrix4fv!
+
+[2025-12-31 15:00:31.002] [JNLog] [error] 找不到 viewPos Uniform3fv!
+
+[2025-12-31 15:00:31.002] [JNLog] [error] 找不到 numLights Uniform1i!
+
+[2025-12-31 15:00:31.002] [JNLog] [error] 找不到 lightPositions[0] Uniform3fv!
+
+[2025-12-31 15:00:31.002] [JNLog] [error] 找不到 lightColors[0] Uniform3fv!
+

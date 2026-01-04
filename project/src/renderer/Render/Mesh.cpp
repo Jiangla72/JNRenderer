@@ -2,6 +2,7 @@
 #include "Triangle.h"
 #include "Vertex.h"
 #include <array>
+#include <cstddef>
 
 #include<glad/glad.h>
 #include<gl/GL.h>
@@ -28,16 +29,16 @@ Mesh::Mesh(const std::vector<uint32_t>& indices, const std::vector<Vertex>& vert
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(unsigned int),
 		&indices[0], GL_STATIC_DRAW);
 
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 12 * sizeof(float), (void*)0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, pos));
 	glEnableVertexAttribArray(0);
 
-	glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, 12 * sizeof(float), (void*)(3 * sizeof(float)));
+	glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, color));
 	glEnableVertexAttribArray(1);
 
-	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 12 * sizeof(float), (void*)(7 * sizeof(float)));
+	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, texCoord));
 	glEnableVertexAttribArray(2);
 
-	glVertexAttribPointer(3, 3, GL_FLOAT, GL_TRUE,  12 * sizeof(float), (void*)(9 * sizeof(float)));
+	glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE,  sizeof(Vertex), (void*)offsetof(Vertex, normal));
 	glEnableVertexAttribArray(3);
 
 	glBindVertexArray(0);

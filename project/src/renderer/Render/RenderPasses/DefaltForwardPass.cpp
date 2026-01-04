@@ -1,5 +1,7 @@
 #include "DefaltForwardPass.h"
 #include "Base/Input.h"
+#include "Base/Config.h"
+
 #include "Render/RenderSystem.h"
 #include "Render/Triangle.h"
 #include "Render/Camera.h"
@@ -27,7 +29,7 @@ void DefaltForwardPass::Init()
 	//m_pShaderModule = ShaderModule::GetShaderModule("D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.vsh", "D:\\Workspace\\JNRenderer\\JNRenderer\\shaders\\defaultShader.fsh");
 	//texture1 = TextureHelper::CreateTextureFromFile("D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
 	m_pShaderModule = ShaderModule::GetShaderModule("G:\\JNRenderer\\JNRenderer\\shaders\\defaultShader.vsh", "G:\\JNRenderer\\JNRenderer\\shaders\\defaultShader.fsh");
-	texture1 = TextureHelper::CreateTextureFromFile("G:\\JNRenderer\\JNRenderer\\models\\spot\\spot_texture.png");
+	texture1 = TextureHelper::CreateTextureFromFile(Config::GetModelTexturePath("spot"));
 }
 
 void DefaltForwardPass::_RenderScene(std::shared_ptr<Scene> scene)
@@ -64,8 +66,14 @@ void DefaltForwardPass::_RenderScene(std::shared_ptr<Scene> scene)
 			break;
 	}
 	m_pShaderModule->setUniformBuffer("LightUBO", (void*)&lightInfo, sizeof(LightInfoForGPU));
-	for(auto model : models)
+	for (auto& model : models)
 	{
+		glm::mat4 modelMatrix = model->GetModelMatrix();
+		glm::mat4 mvpMatrix = cameraData.matViewProject * modelMatrix;
+
+		m_pShaderModule->setUniformMatrix4fv("mvpMatrix", mvpMatrix);
+		m_pShaderModule->setUniformMatrix4fv("model", modelMatrix);
+
 		model->render();
 	}
 }

@@ -9,6 +9,9 @@ Camera::Camera(float fov, float aspect_ratio, float zNear, float zFar)
 	m_sCameraData.aspect_ratio = aspect_ratio;
 	m_sCameraData.zNear = zNear;
 	m_sCameraData.zFar = zFar;
+	m_sCameraData.up = glm::vec3(0.0f, 1.0f, 0.0f);
+	m_sCameraData.forward = glm::vec3(0.0f, 0.0f, -1.0f);
+	m_bDirty = true;
 }
 
 Camera::~Camera()

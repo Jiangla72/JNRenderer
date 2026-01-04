@@ -9,7 +9,8 @@ in VS_OUT
 
 layout (location = 0) out vec4 gPosition;
 layout (location = 1) out vec4 gNormal;
-layout (location = 2) out vec4 gAlbedoSpec; //颜色
+layout (location = 2) out vec4 gAlbedo;
+layout (location = 3) out vec4 gMetallicRoughness; // 金属度 + 粗糙度
 
 uniform sampler2D texture1;
 
@@ -17,6 +18,9 @@ void main()
 {
 	gPosition = fs_in.i_pos;
 	gNormal = normalize(fs_in.i_normal);
-	gAlbedoSpec.rgb = texture(texture1, fs_in.i_texCoord).rgb;
-	gAlbedoSpec.a = 0.7937;
+	gAlbedo.rgb = texture(texture1, fs_in.i_texCoord).rgb * fs_in.i_color.rgb;
+	gAlbedo.a = 1.0; // Alpha
+	gMetallicRoughness.r = 0.0; // 金属度（简化）
+	gMetallicRoughness.g = 0.5; // 粗糙度（简化）
+	gMetallicRoughness.ba = vec2(0.0, 1.0);
 }; 

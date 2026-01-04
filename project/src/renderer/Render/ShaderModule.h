@@ -51,6 +51,7 @@ public:
 		std::shared_ptr<Shader> m_pHShader,
 		std::shared_ptr<Shader> m_pDShader);
 	void use();
+	bool setUniform1i(const std::string& str, int iValue);
 	bool setUniform3fv(const std::string& str, const glm::vec3& vec3Value);
 	bool setUniformMatrix4fv(const std::string& str, const glm::mat4x4& matValue);
 	bool setUniformBuffer(const std::string& str, const void* data, size_t uSize);

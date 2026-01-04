@@ -24,6 +24,7 @@ project "renderer"
 		thirdparty.."/spdlog/**.h",
 		thirdparty.."/stb/**.h",
 		thirdparty.."/stb/**.cpp",
+		thirdparty.."/json.hpp",
 
 	}
 	includedirs
@@ -35,6 +36,7 @@ project "renderer"
        thirdparty.."/glad/include",
        thirdparty.."/glfw/include",
        thirdparty.."/stb",
+       thirdparty.."/spdlog",
        thirdparty.."/",
     }
 

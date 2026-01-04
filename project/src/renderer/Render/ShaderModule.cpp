@@ -134,6 +134,18 @@ void ShaderModule::use()
 	glUseProgram(shaderProgram);
 }
 
+bool ShaderModule::setUniform1i(const std::string& str, int iValue)
+{
+	int nIndex = glGetUniformLocation(getProgram(), str.c_str());
+	if (nIndex != -1)
+	{
+		glUniform1i(nIndex, iValue);
+		return true;
+	}
+	JNLOGERROR("’“≤ªµΩ {} Uniform1i!\n", str);
+	return false;
+}
+
 bool ShaderModule::setUniform3fv(const std::string& str, const glm::vec3& vec3Value)
 {
 	int nIndex = glGetUniformLocation(getProgram(), str.c_str());

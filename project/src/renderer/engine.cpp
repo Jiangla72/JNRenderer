@@ -1,5 +1,6 @@
 #include "engine.h"
 #include "Base/Timer.h"
+#include "Base/Config.h"
 #include "Window/window.h"
 #include "Render/Model.h"
 #include "Render/SoftRenderer.h"
@@ -33,6 +34,10 @@ void Engine::start()
 {
 	LogSystem::init();
 	JNLOGINFO("LogSystem Inited.");
+	if (!Config::Load("G:\\JNRenderer\\JNRenderer\\config.json")) {
+		JNLOGERROR("Failed to load config.json");
+	}
+	JNLOGINFO("Config loaded.");
 	ResourceManager::Init();
 	JNLOGINFO("ResManager Inited.");
 	SceneManager::Init();

@@ -6,28 +6,47 @@ void Editor::_CreateDemoScene()
 	//std::string pathModel = "D:\\Workspace\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj";
 	std::string pathModel = "G:\\JNRenderer\\JNRenderer\\models\\spot\\spot_triangulated_good.obj";
     std::shared_ptr<Model> bunny = ResourceManager::GetResource<Model>(pathModel);
-    JNLOGINFO("Create Model at path : {} , with mesh count : {}", pathModel, bunny->m_vecMesh.size());
+    
+    // Scale down the model to fix the "too large" issue
+	bunny->SetScale(glm::vec3(0.75f)); 
+	// Center it
+	bunny->SetPosition(glm::vec3(0.0f, 0.0f, 0.0f));
+	// Rotate to face camera (optional, depending on model)
+	bunny->SetRotation(glm::vec3(0.0f, 180.0f, 0.0f));
 
-    std::shared_ptr<Scene> scene = std::make_shared <Scene>();
-    scene->init();
-    scene->Add(bunny);
-    Light* light = new Light();
-    light->position = { 20, 0, 50 ,0 };
-    light->intensity = { 500, 500, 500 ,0 };
-    light->color = { 0.2, 0, 0.21 ,0 };
-    Light* light1 = new Light();
-    light1->position = { 0, 0, 50 ,0 };
-    light1->intensity = { 500, 500, 500 ,0 };
-    light1->color = { 0.53, 0.12, 0.8 ,0 };
+	JNLOGINFO("Create Model at path : {} , with mesh count : {}", pathModel, bunny->m_vecMesh.size());
 
-    Light* light2 = new Light();
-    light2->position = { 20, 0, 50 ,0 };
-    light2->intensity = { 500, 500, 500 ,0 };
-    light2->color = { 0.6, 1, 0.6 ,0 };
+	std::shared_ptr<Scene> scene = std::make_shared <Scene>();
+	scene->init();
+	scene->Add(bunny);
+	
+	scene->AddCube(1.0f, glm::vec3(-2.0f, 0.0f, 0.0f));
+	scene->AddSphere(0.5f, 32, 16, glm::vec3(2.0f, 0.0f, 0.0f));
 
-    scene->Add(light);
-    scene->Add(light1);
-    scene->Add(light2);
+	// Add a floor plane for reference
+	scene->AddPlane(20.0f, 20.0f, glm::vec3(0.0f, -0.5f, 0.0f));
+
+	// Point Light: Closer and brighter for the scaled model
+	Light* pointLight = new Light();
+    pointLight->position = { 2.0f, 2.0f, 2.0f, 1.0f }; 
+    pointLight->intensity = { 50.0f, 50.0f, 50.0f, 0.0f }; 
+    pointLight->color = { 1.0f, 0.95f, 0.85f, 0.0f };
+
+    // Directional Light: Fill light
+    Light* dirLight = new Light();
+    dirLight->position = { -2.0f, 4.0f, -1.0f, 0.0f }; 
+    dirLight->intensity = { 10.0f, 10.0f, 10.0f, 0.0f }; 
+    dirLight->color = { 0.95f, 0.95f, 1.0f, 0.0f }; 
+
+    // Spot Light: Highlight
+    Light* spotLight = new Light();
+    spotLight->position = { 0.0f, 3.0f, 3.0f, 1.0f }; 
+    spotLight->intensity = { 80.0f, 80.0f, 80.0f, 0.0f };
+    spotLight->color = { 1.0f, 0.9f, 0.6f, 0.0f };
+
+    scene->Add(pointLight);
+    scene->Add(dirLight);
+    scene->Add(spotLight);
 
     SceneManager::AddScene("1", scene);
     SceneManager::SetActiveScene("1");
@@ -61,5 +80,3 @@ void Editor::_onGui()
 	Engine::_onGui();
     m_pWidgetManager->OnGui();
 }
-
-

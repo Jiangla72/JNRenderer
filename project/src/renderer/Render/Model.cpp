@@ -4,9 +4,11 @@
 #include <array>
 #include "Model.h"
 #include "Vertex.h"
+#include <glm/gtc/matrix_transform.hpp>
 
 Model::Model()
 {
+	UpdateModelMatrix();
 }
 Model::~Model()
 {
@@ -22,7 +24,7 @@ void Model::Release()
 
 const std::string& Model::GetName() const
 {
-	// TODO: 在此处插入 return 语句
+	// TODO: 诖舜 return 
 	return std::string();
 }
 
@@ -42,6 +44,44 @@ void Model::render()
 	{
 		mesh->draw();
 	}
+}
+
+void Model::SetPosition(const glm::vec3& pos)
+{
+	m_position = pos;
+	m_bDirty = true;
+}
+
+void Model::SetRotation(const glm::vec3& rot)
+{
+	m_rotation = rot;
+	m_bDirty = true;
+}
+
+void Model::SetScale(const glm::vec3& scale)
+{
+	m_scale = scale;
+	m_bDirty = true;
+}
+
+glm::mat4 Model::GetModelMatrix() const
+{
+	if (const_cast<Model*>(this)->m_bDirty)
+	{
+		const_cast<Model*>(this)->UpdateModelMatrix();
+	}
+	return m_modelMatrix;
+}
+
+void Model::UpdateModelMatrix()
+{
+	m_modelMatrix = glm::mat4(1.0f);
+	m_modelMatrix = glm::translate(m_modelMatrix, m_position);
+	m_modelMatrix = glm::rotate(m_modelMatrix, glm::radians(m_rotation.x), glm::vec3(1.0f, 0.0f, 0.0f));
+	m_modelMatrix = glm::rotate(m_modelMatrix, glm::radians(m_rotation.y), glm::vec3(0.0f, 1.0f, 0.0f));
+	m_modelMatrix = glm::rotate(m_modelMatrix, glm::radians(m_rotation.z), glm::vec3(0.0f, 0.0f, 1.0f));
+	m_modelMatrix = glm::scale(m_modelMatrix, m_scale);
+	m_bDirty = false;
 }
 
 void Model::_Load(const std::string& obj)
@@ -96,7 +136,7 @@ void Model::_Load(const std::string& obj)
 		if (attrib.normals.empty())
 			Mesh::generateNormals(vertices, indices);
 
-		Mesh* mesh = new Mesh(indices, vertices);
+		std::shared_ptr<Mesh> mesh = std::make_shared<Mesh>(indices, vertices);
 
 		for (int i = 0; i < indices.size(); i += 3)
 		{

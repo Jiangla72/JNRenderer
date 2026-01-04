@@ -3,24 +3,39 @@
 #include "Base/ISystem.h"
 #include <vector>
 #include <memory>
-
+#include <glm/glm.hpp>
 
 class IPass;
 class Scene;
 class Texture;
+class Camera;
+struct Light;
+class IRenderer;
+
 struct RenderContext
 {
 	std::shared_ptr<Scene> scene = nullptr;
+	Camera* camera = nullptr;
+	std::vector<Light*> lights;
+	int renderWidth = 0;
+	int renderHeight = 0;
+	std::shared_ptr<Texture> m_gBuffer1 = nullptr; //position
+	std::shared_ptr<Texture> m_gBuffer2 = nullptr; //normal
+	std::shared_ptr<Texture> m_gBuffer3 = nullptr; //albedo
+	std::shared_ptr<Texture> m_gBuffer4 = nullptr; //metallic and roughness
+	unsigned int m_uShadowMap = 0; //shadow map
+	glm::mat4 m_lightSpaceMatrix = glm::mat4(1.0f); //light space matrix for shadow mapping
 };
 
 class JNAPI RenderSystem :public ISystem
 {
 private:
-	unsigned int fbo = 0; // FBO¶ÔÏóµÄ¾ä±ú
-	unsigned int colorBuffer = 0; // ÑÕÉ«»º³åÇø¶ÔÏóµÄ¾ä±ú
-	unsigned int depthBuffer = 0; // Éî¶È»º³åÇø¶ÔÏóµÄ¾ä±ú
-	int m_nWidth = 1000; // FBOµÄ¿í¶È
-	int m_nHeight = 600; // FBOµÄ¸ß¶È
+	std::unique_ptr<IRenderer> m_pRenderer; // æ¸²æŸ“å™¨æŠ½è±¡å±‚
+	unsigned int fbo = 0;                  // ä¸»æ¸²æŸ“ FBO å¥æŸ„
+	unsigned int colorBuffer = 0;          // ä¸»æ¸²æŸ“ FBO çš„é¢œè‰²ç¼“å†²
+	unsigned int depthBuffer = 0;          // ä¸»æ¸²æŸ“ FBO çš„æ·±åº¦ç¼“å†²
+	int m_nWidth = 1000;                   // ä¸»æ¸²æŸ“åŒºåŸŸå®½åº¦
+	int m_nHeight = 600;                   // ä¸»æ¸²æŸ“åŒºåŸŸé«˜åº¦
 	std::vector<IPass*> m_vecPasses;
 	RenderContext m_sRenderContext;
 	std::shared_ptr<Texture> m_pTexture = nullptr;

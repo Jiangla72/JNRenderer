@@ -23,6 +23,8 @@ project "editor"
        thirdparty.."/glad/include",
        thirdparty.."/glfw/include",
        thirdparty.."/stb",
+       thirdparty.."/glm",
+       thirdparty.."/spdlog",
        thirdparty.."/",
 	   thirdparty,
     }
